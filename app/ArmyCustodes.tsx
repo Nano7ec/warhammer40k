@@ -6,7 +6,7 @@ const {width} = Dimensions.get('screen')
 export default function ArmyCustodes (){
     return (
         <View style={style.container} >
-            <Pressable onPress={()=> router.push('./Custodes')}>
+            <Pressable onPress={()=> router.push('/Custodes')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyCustodes.png')} style={style.image}/>
             </Pressable>
             <Pressable>

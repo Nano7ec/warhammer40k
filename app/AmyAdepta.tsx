@@ -2,13 +2,13 @@ import { router } from "expo-router";
 import { Image ,View, StyleSheet, Dimensions, Pressable } from "react-native";
 const {width} = Dimensions.get('screen')
 
-export default function ArmyAdepta(){
+export default function ArmyAdepta(){ 
     return(
         <View style={styles.container}>
-            <Pressable onPress={()=> router.push('./Adepta')}>
+            <Pressable onPress={()=> router.push('/Adepta')}>
                 <Image resizeMode="stretch" source={require('../assets/images/ArmyAdepta.png')} style={styles.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinAdepta')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinAdepta.png')} style={styles.image}/>
             </Pressable>
         </View>

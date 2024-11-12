@@ -6,7 +6,7 @@ const {width} = Dimensions.get('screen')
 export default function (){
     return(
         <View style={style.container}>
-            <Pressable onPress={()=> router.push('./SpaceWolf')}>
+            <Pressable onPress={()=> router.push('/SpaceWolf')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmySpaceW.png')} style={style.image}/>
             </Pressable>
             <Pressable>

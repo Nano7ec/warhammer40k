@@ -43,6 +43,9 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/ArmyThou')}>
       <Image resizeMode="stretch" source={require("../assets/images/ArmyTousandS.png")}style={style.image}/>
       </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyWorldEaters')}>
+      <Image source={require('../assets/images/ArmyWorldE.png')} style={style.image}/>
+      </Pressable>
     </ScrollView> 
   );
 };

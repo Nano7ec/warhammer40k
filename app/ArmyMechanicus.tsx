@@ -1,12 +1,17 @@
+import { router } from "expo-router";
 import {Image, Pressable, StyleSheet, Dimensions, View} from "react-native";
 const {width} = Dimensions.get('screen');
 
 export default function ArmyMechanicus (){
     return(
         <View style={styles.container}>
-            <Pressable>
-                <Image resizeMode="stretch" source={require("../assets/images/ArmyMecha.png")}/>
+            <Pressable onPress={()=> router.push('/Mechanicus')}>
+                <Image resizeMode="stretch" source={require("../assets/images/ArmyMecha.png")} style={styles.image}/>
             </Pressable>
+            <Pressable>
+                <Image resizeMode="stretch" source={require("../assets/images/MinMecha.png")} style={styles.image}/>
+            </Pressable>
+            
         </View>
     );
 };

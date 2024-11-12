@@ -6,7 +6,7 @@ const {width} = Dimensions.get('screen')
 export default function ArmyNecrons(){
     return (
         <View style={style.container} >
-            <Pressable onPress={()=> router.push('./Necrons')}>
+            <Pressable onPress={()=> router.push('/Necrons')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyNecrons.png')} style={style.image}/>
             </Pressable>
             <Pressable>

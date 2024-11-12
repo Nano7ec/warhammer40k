@@ -5,7 +5,7 @@ const {width} = Dimensions.get ('screen');
 export default function ArmyAeldari (){
     return(
         <View style={styles.container}>
-            <Pressable onPress={()=> router.push('./Aeldari')}>
+            <Pressable onPress={()=> router.push('/Aeldari')}>
                 <Image source={require ('../assets/images/ArmyAeldari.png')} style={styles.image}/>
             </Pressable>
             <Pressable>
