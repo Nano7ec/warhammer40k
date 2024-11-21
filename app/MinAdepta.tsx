@@ -9,7 +9,7 @@ export default function MinAdepta (){
             <View style={styles.tableRow}>
               <>
                 <View style={styles.tableCelltop}>
-                  <Text style={styles.headerText}>Paabra</Text>
+                  <Text style={styles.headerText}>Palabra</Text>
                 </View>
                 <View style={styles.tableCelltop}>
                   <Text style={styles.headerText}>Acronimos</Text>
