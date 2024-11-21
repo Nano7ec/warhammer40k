@@ -1,4 +1,5 @@
 import { router } from "expo-router";
+import { Route } from "expo-router/build/Route";
 import {Image,StyleSheet, Dimensions, Pressable } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
@@ -46,6 +47,34 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/ArmyWorldEaters')}>
       <Image source={require('../assets/images/ArmyWorldE.png')} style={style.image}/>
       </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyBloodAngel')}>
+        <Image source={require('../assets/images/bloodangels.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyChaosDemon')}>
+        <Image source={require('../assets/images/chaosdaemons.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyChaosKnight')}>
+        <Image source={require('../assets/images/chaosknight.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyChaosSpaceMarine')}>
+      <Image source={require('../assets/images/chaos_space_marines.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyDarkAngels')}>
+      <Image source={require('../assets/images/ArmyDarkAngels.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyDeathGuard')}>
+      <Image source={require('../assets/images/ArmyDeathGuard.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyDeathWatch')}>
+      <Image source={require('../assets/images/ArmyDeathWatch.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyDurkhari')}>
+      <Image source={require('../assets/images/ArmyDrukhari.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyGenestealerCults')}>
+      <Image source={require('../assets/images/ArmyGenestealerCults.png')} style={style.image}/>
+      </Pressable>
+
     </ScrollView> 
   );
 };
