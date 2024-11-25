@@ -1,4 +1,5 @@
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
+import Morvenn from '@/components/miniaturas/Adepta/Morvenn';
 
 export default function MinAdepta (){
     return (
@@ -188,6 +189,7 @@ export default function MinAdepta (){
               </>
             </View>
             </>
+            <Morvenn/> 
         </ScrollView>
       );
     };

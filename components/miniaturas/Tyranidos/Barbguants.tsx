@@ -6,7 +6,7 @@ export default function Barbguants(){
     return(
         <View>
            <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Barbguants.png')} />
+        <Image resizeMode="stretch" style={styles.image} source={require(' ../Tyranidos/imagenes/Barbguants.png')} />
         <Text style={styles.border}>
           Habilidades
         </Text>
