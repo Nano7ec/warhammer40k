@@ -74,6 +74,9 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/ArmyGenestealerCults')}>
       <Image source={require('../assets/images/ArmyGenestealerCults.png')} style={style.image}/>
       </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyImperialAgent')}>
+      <Image resizeMode="stretch" source={require('../assets/images/TitleImperialAgentArmyRule.png')} style={style.image} />
+      </Pressable>
 
     </ScrollView> 
   );
