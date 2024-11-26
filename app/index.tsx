@@ -74,10 +74,22 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/ArmyGenestealerCults')}>
       <Image source={require('../assets/images/ArmyGenestealerCults.png')} style={style.image}/>
       </Pressable>
-      <Pressable onPress={()=> router.push('/ArmyImperialAgent')}>
-      <Image resizeMode="stretch" source={require('../assets/images/TitleImperialAgentArmyRule.png')} style={style.image} />
+      <Pressable onPress={()=> router.push('/ArmyImperialKnight')}>
+      <Image source={require('../assets/images/ArmyImperialKnight.png')} style={style.image}/>
       </Pressable>
-
+      <Pressable onPress={()=> router.push('/ArmyImperialA')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyImperialA.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyImperialGuard')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyimperialG.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyTauEmpire')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyTauEmpire.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyLeagueOfVotan')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyLeagueofVotann.png')} style={style.image}/>
+      </Pressable>
+ 
     </ScrollView> 
   );
 };

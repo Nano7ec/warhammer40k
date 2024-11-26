@@ -1,13 +1,9 @@
-import * as React from 'react';
-import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import { Text, ScrollView, StyleSheet, View } from 'react-native';
 
- 
-const { width } = Dimensions.get('screen');
-
-export default function MinImperialAgent () {
-  return (
-    <ScrollView>
-      <>
+export default function MinImperialAgents(){
+    return(
+        <ScrollView>
+        <>
         <Text style={styles.border}>Gramatica usada</Text>
         {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
@@ -184,49 +180,52 @@ export default function MinImperialAgent () {
           </>
         </View>
       </>
-    </ScrollView>
-  );
-};
-
+        </ScrollView>
+    );
+}
+ 
 const styles = StyleSheet.create({
-  border: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 20, padding: 5, marginTop: 6, borderTopLeftRadius: 10, borderTopRightRadius: 10 },
-  descrip: { fontSize: 18, backgroundColor: '#C5ACE3', color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3, borderBottomLeftRadius: 10, borderBottomRightRadius: 10 },
-  image: { width: width, height: 100, borderRadius: 20, marginTop: 15 },
-  tableRow: {
-    flexDirection: 'row', // Alinear elementos en fila
-    borderBottomWidth: 1,
-    borderBottomColor: '#2C0069',
-  },
-  tableCelltop: {
-    flex: 1, // Distribuye equitativamente el espacio entre columnas
-    alignItems: 'center', // Centra el contenido horizontalmente
-    justifyContent: 'center', // Centra el contenido verticalmente
-    padding: 5,
-    backgroundColor: '#2C0069',
-    marginTop: 5,
-    fontSize: 10
-  },
-  tableCell: {
-    flex: 1, // Distribuye equitativamente el espacio entre columnas
-    alignItems: 'center', // Centra el contenido horizontalmente
-    justifyContent: 'center', // Centra el contenido verticalmente
-    padding: 5,
-    backgroundColor: '#C5ACE3',
-    fontSize: 10
-  },
-  headerText: {
-    color: '#fff', fontWeight: 'bold', fontSize: 20
-  },
-  cellText: {
-    fontSize: 14,
-    color: '#000',
-
-  },
-  wapo: {
-    color: '#2C0069',
-    fontWeight: 'bold'
-  },
-  MinDes: {
-    fontSize: 18, color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3
-  }
-});
+    border: { color: '#fff', fontWeight: 'bold', 
+        backgroundColor: '#2C0069', 
+        fontSize: 20, 
+        padding: 5, 
+        marginTop: 6, 
+        borderTopLeftRadius: 10, 
+        borderTopRightRadius: 10 },
+    tableRow: {
+        flexDirection: 'row', // Alinear elementos en fila
+        borderBottomWidth: 1,
+        borderBottomColor: '#2C0069',
+      },
+      tableCelltop: {
+        flex: 1, // Distribuye equitativamente el espacio entre columnas
+        alignItems: 'center', // Centra el contenido horizontalmente
+        justifyContent: 'center', // Centra el contenido verticalmente
+        padding: 5,
+        backgroundColor: '#2C0069',
+        marginTop: 5,
+        fontSize: 10
+      },
+      tableCell: {
+        flex: 1, // Distribuye equitativamente el espacio entre columnas
+        alignItems: 'center', // Centra el contenido horizontalmente
+        justifyContent: 'center', // Centra el contenido verticalmente
+        padding: 5,
+        backgroundColor: '#C5ACE3',
+        fontSize: 10
+      },
+      
+    cellText: {
+        fontSize: 14,
+        color: '#000',
+    
+      },
+    headerText: {
+      color: '#fff', fontWeight: 'bold', 
+      fontSize: 20
+    },
+    wapo: {
+      color: '#2C0069',
+      fontWeight: 'bold'
+    },
+  });
