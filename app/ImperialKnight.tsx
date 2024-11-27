@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, ScrollView, StyleSheet } from 'react-native';
 
 export default function ImperialKnights() {

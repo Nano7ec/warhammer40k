@@ -1,5 +1,6 @@
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
 import Barbguants from '@/components/miniaturas/Tyranidos/Barbguants';
+import React from 'react';
 
 export default function MinT(){
     return(
