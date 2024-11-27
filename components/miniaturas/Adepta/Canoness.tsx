@@ -2,20 +2,20 @@ import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
-export default function Morvenn(){
+export default function Canoness(){
     return(
         <View>
            <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Adepta/images/Morvenn.png')} />
+        <Image resizeMode="stretch" style={styles.image} source={require('../Adepta/images/Canoness.png')} />
 
         <Text style={styles.border}>
           Habilidades
         </Text>
         <Text style={styles.descrip}>
-          {'\n'}<Text style={styles.wapo}>Núcleo:</Text> Muerte Demoledora 1, Líder
+          {'\n'}<Text style={styles.wapo}>Núcleo:</Text> Líder
           {'\n'}<Text style={styles.wapo}>Faccion:</Text> Actos de Fe
-          {'\n'}<Text style={styles.wapo}>Abadesa Sancturum:</Text> Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad haga un ataque, puedes repetir la tirada para impactar y repetir la tirada para herir.
-          {'\n'}<Text style={styles.wapo}>Indignación Justa:</Text> Una vez por batalla, en tu fase de mando, este modelo puede usar esta habilidad. Si lo hace, hasta el inicio de tu próxima fase de mando, suma 3 a la característica de Ataques de Fidelis y la Lanza de Iluminación.
+          {'\n'}<Text style={styles.wapo}>Liderar a los Justos:</Text> Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad haga un ataque, puedes repetir la tirada para impactar.
+          {'\n'}<Text style={styles.wapo}>Gracia del Emperador:</Text> Una vez por batalla, al inicio de cualquier fase, este modelo puede usar esta habilidad. Si lo hace, hasta el final de la fase, este modelo tiene una salvación invulnerable de 2+.
           {'\n'}<Text style={styles.wapo}>Salvación Invulnerable: +4</Text>
         </Text>
         {/* Cabecera de la tabla */}
@@ -49,63 +49,13 @@ export default function Morvenn(){
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Fidelis (Impactos Sostenidos)</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Pistola bólter [Pistola]</Text></Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>36"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>3</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>6</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Lanzamisiles Paragon – Prioris:</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>36"</Text>
+              <Text style={styles.cellText}>12"</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>8</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-2</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D6</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Lanzamisiles Paragon – Sanctorum (Explosivo):</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>36"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2D6</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>2+</Text>
@@ -118,6 +68,132 @@ export default function Morvenn(){
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Brasero de fuego sagrado [Disparo único, Tormento]:
+                {'\n'}(El portador solo puede disparar esta arma una vez por batalla.)</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>12"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>6</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Condemnator boltgún [Precisión, Disparo rápido 1, Impactos devastadores]:</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>24"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>5</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2</Text>
+            </View>
+          </>
+        </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Pistola Inferno [Melta 2, Pistola]:</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>6"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>8</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-4</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>D3</Text>
+            </View>
+          </>
+        </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Pistola de plasma – estándar [Pistola]:</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>12"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>7</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-2</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Pistola de plasma – sobrecargada [Pistola peligrosa]:</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>12"</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>8</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-3</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>2</Text>
             </View>
           </>
         </View>
@@ -151,44 +227,44 @@ export default function Morvenn(){
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Lanza de Iluminación – Golpe (Heridas Devastadoras):</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Espada bendita:</Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
+              <Text style={styles.cellText}>3</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>2+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>8</Text>
+              <Text style={styles.cellText}>6</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>-2</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>3</Text>
+              <Text style={styles.cellText}>2</Text>
             </View>
           </>
         </View>
         <View style={styles.tableRow}>
         <>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Lanza de Iluminación – Barrido:</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Sierra</Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>10</Text>
+              <Text style={styles.cellText}>4</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
+              <Text style={styles.cellText}>4+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
+              <Text style={styles.cellText}>4</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>-1</Text>
@@ -198,27 +274,43 @@ export default function Morvenn(){
             </View>
           </>
         </View>
+        <View style={styles.tableRow}>
+        <>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Arma de poder:</Text></Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>4</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>4+</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>5</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>-2</Text>
+            </View>
+            <View style={styles.tableCell}>
+              <Text style={styles.cellText}>1</Text>
+            </View>
+          </>
+        </View>
+        <Text style={styles.MinDes}>
+        (Antes de seleccionar los objetivos de esta arma, elige uno de estos perfiles para realizar ataques con ella.)
+        </Text>
         <>
           <Text style={styles.border}>
-            COMPOSICIÓN DE UNIDAD
+          HABILIDADES DEL EQUIPO DE GUERRA
           </Text>
-          <Text style={styles.descrip}>■ 1 Morvenn Vahl – Héroe Épico
-            {'\n'}Este modelo está equipado con: Fidelis, Lanzamisiles Paragon, Lanza de Iluminación.
+          <Text style={styles.descrip}>■ Varilla Nula: 
+            {'\n'}Los modelos en la unidad del portador tienen la regla Sin Dolor 4+ contra ataques psíquicos.
            </Text>
-        </>
-        <>
-          <Text style={styles.border}>
-            LIDER
-          </Text>
-          <Text style={styles.descrip}>■ Este modelo puede unirse a la siguiente unidad:
-            {'\n'}Exotrajes Paragon
-           </Text>
-        </>
-        <>
-          <Text style={styles.border}>
-          COMANDANTE SUPREMO
-          </Text>
-          <Text style={styles.descrip}>■ Si este modelo está en tu ejército, debe ser tu Señor de la Guerra.
+           <Text style={styles.descrip}>■ Varilla de Mando: 
+            {'\n'}Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un dado; con un resultado de 4+, obtienes 1 PC.
            </Text>
         </>
       </> 

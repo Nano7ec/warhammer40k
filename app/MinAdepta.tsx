@@ -1,5 +1,7 @@
+import { router } from "expo-router";
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
 import Morvenn from '@/components/miniaturas/Adepta/Morvenn';
+import Canoness from "@/components/miniaturas/Adepta/Canoness";
 
 export default function MinAdepta (){
     return (
@@ -190,6 +192,7 @@ export default function MinAdepta (){
             </View>
             </>
             <Morvenn/> 
+            <Canoness/>
         </ScrollView>
       );
     };
