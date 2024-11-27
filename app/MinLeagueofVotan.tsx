@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
 
 export default function MinLeagueofVotan(){

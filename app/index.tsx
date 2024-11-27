@@ -1,5 +1,6 @@
 import { router } from "expo-router";
 import { Route } from "expo-router/build/Route";
+import React from "react";
 import {Image,StyleSheet, Dimensions, Pressable } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
