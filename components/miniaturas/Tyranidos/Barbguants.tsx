@@ -42,7 +42,7 @@ export default function Barbguants(){
             </View>
           </>
         </View>
-        {/* Filas de la tabla */}
+        {/* Filas de la tabla armas cuerpo a cuerpo */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCell}>
@@ -69,7 +69,7 @@ export default function Barbguants(){
             </View>
           </>
         </View>
-        {/* Cabecera de la tabla */}
+        {/* Cabecera de la tabla armas distancia */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCelltop}>
