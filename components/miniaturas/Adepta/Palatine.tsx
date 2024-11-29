@@ -2,20 +2,20 @@ import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
-export default function Canoness(){
+export default function Palatines(){
     return(
         <View>
            <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Adepta/images/Canoness.png')} />
+        <Image resizeMode="stretch" style={styles.image} source={require('../Adepta/images/Palatine.png')} />
 
         <Text style={styles.border}>
           Habilidades
         </Text>
         <Text style={styles.descrip}>
-          {'\n'}<Text style={styles.wapo}>Núcleo:</Text> Líder
+          {'\n'}<Text style={styles.wapo}>Núcleo:</Text> Líder, Exploradores 6"
           {'\n'}<Text style={styles.wapo}>Faccion:</Text> Actos de Fe
-          {'\n'}<Text style={styles.wapo}>Liderar a los Justos:</Text> Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad haga un ataque, puedes repetir la tirada para impactar.
-          {'\n'}<Text style={styles.wapo}>Gracia del Emperador:</Text> Una vez por batalla, al inicio de cualquier fase, este modelo puede usar esta habilidad. Si lo hace, hasta el final de la fase, este modelo tiene una salvación invulnerable de 2+.
+          {'\n'}<Text style={styles.wapo}>Furia de los Justos:</Text> Mientras este modelo lidere una unidad, las armas equipadas por los modelos de esa unidad ganan la habilidad Golpes Letales.
+          {'\n'}<Text style={styles.wapo}>Golpes Arrebatadores:</Text> Cada vez que este modelo sea seleccionado para luchar, puedes descartar un dado Milagroso. Si lo haces, hasta el final de la fase, cada vez que se haga un ataque con este modelo que obtenga un resultado de 6 para herir, el objetivo de ese ataque sufre 1 herida mortal adicional al daño normal.
           {'\n'}<Text style={styles.wapo}>Salvación Invulnerable: +4</Text>
         </Text>
         {/* Cabecera de la tabla */}
@@ -68,82 +68,6 @@ export default function Canoness(){
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Brasero de fuego sagrado [Disparo único, Tormento]:
-                {'\n'}(El portador solo puede disparar esta arma una vez por batalla.)</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>12"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>6</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Condemnator boltgún [Precisión, Disparo rápido 1, Impactos devastadores]:</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>24"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Pistola Inferno [Melta 2, Pistola]:</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>6"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>2+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>8</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-4</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D3</Text>
             </View>
           </>
         </View>
@@ -227,19 +151,19 @@ export default function Canoness(){
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Espada bendita:</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Hoja Palatina:</Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>3</Text>
+              <Text style={styles.cellText}>4</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>2+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>6</Text>
+              <Text style={styles.cellText}>4</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>-2</Text>
@@ -249,89 +173,30 @@ export default function Canoness(){
             </View>
           </>
         </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Sierra</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        <View style={styles.tableRow}>
-        <>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}><Text style={styles.wapo}>Arma de poder:</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>Cuerpo a cuerpo</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>-2</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        <Text style={styles.MinDes}>
-        (Antes de seleccionar los objetivos de esta arma, elige uno de estos perfiles para realizar ataques con ella.)
-        </Text>
         <>
           <Text style={styles.border}>
-          HABILIDADES DEL EQUIPO DE GUERRA
+            OPCIONES DE EQUIPO DE GUERRA
           </Text>
-          <Text style={styles.descrip}>■ Varilla Nula: 
-            {'\n'}Los modelos en la unidad del portador tienen la regla Sin Dolor 4+ contra ataques psíquicos.
-           </Text>
-           <Text style={styles.descrip}>■ Varilla de Mando: 
-            {'\n'}Cada vez que selecciones la unidad del portador como objetivo de una Estratagema, tira un dado; con un resultado de 4+, obtienes 1 PC.
+          <Text style={styles.descrip}>La pistola bólter de este modelo puede ser reemplazada con una pistola de plasma.
+          </Text>
+        </>
+        <>
+          <Text style={styles.border}>
+            COMPOSICIÓN DE UNIDAD
+          </Text>
+          <Text style={styles.descrip}>■ 1 Palatina
+            {'\n'}Este modelo está equipado con: Pistola bólter, Hoja Palatina.
            </Text>
         </>
         <>
           <Text style={styles.border}>
-          OPCIONES DE EQUIPO DE GUERRA
+            LIDER
           </Text>
-          <Text style={styles.descrip}>■ La pistola bólter de este modelo puede ser reemplazada por una de las siguientes:
-          {'\n'}◦ 1 bolter condemnor
-          {'\n'}◦ 1 pistola inferno
-          {'\n'}◦ 1 pistola de plasma
-           </Text>
-          <Text style={styles.descrip}>■ La sierra de este modelo puede ser reemplazada por una de las siguientes:
-            {'\n'}◦ 1 espada bendita
-            {'\n'}◦ 1 arma de poder
-          </Text>
-          <Text style={styles.descrip}>■ Si este modelo está equipado con una sierra, puede equiparse con uno de los siguientes:
-            {'\n'}◦ 1 brasero de fuego sagrado
-            {'\n'}◦ 1 varilla nula
-           </Text>
-           <Text style={styles.descrip}>■ Si este modelo está equipado con una pistola de plasma y un arma de poder, puede equiparse con:
-            {'\n'}◦ 1 varilla de mando
+          <Text style={styles.descrip}>■ Este modelo puede unirse a las siguientes unidades:
+            {'\n'}Escuadra de Hermanas de Batalla
+            {'\n'}Escuadra Celestiana
+            {'\n'}Escuadra Dominio
+            {'\n'}Escuadra Novicia de las Hermanas
            </Text>
         </>
       </> 
