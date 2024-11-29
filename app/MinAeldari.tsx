@@ -6,6 +6,7 @@ import AutarchSkyrunner from "@/components/miniaturas/Aeldari/AutarchSkyrunner";
 import AutarchWayleaper from "@/components/miniaturas/Aeldari/AutarchWayleaper";
 import Avatar from "@/components/miniaturas/Aeldari/Avatar";
 import Baharroth from "@/components/miniaturas/Aeldari/Baharroth";
+import Corsair from "@/components/miniaturas/Aeldari/Corsair";
 
 export default function MinAeldari (){
     return (
@@ -201,6 +202,7 @@ export default function MinAeldari (){
             <AutarchSkyrunner/>
             <Avatar/>
             <Baharroth/>
+            <Corsair/>
         </ScrollView>
       );
     };
