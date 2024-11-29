@@ -2,6 +2,11 @@ import { router } from "expo-router";
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
 import Morvenn from '@/components/miniaturas/Adepta/Morvenn';
 import Canoness from "@/components/miniaturas/Adepta/Canoness";
+import Palatines from "@/components/miniaturas/Adepta/Palatine";
+import Junith from "@/components/miniaturas/Adepta/Junith";
+import Missionary from "@/components/miniaturas/Adepta/Missionary";
+import Celestine from "@/components/miniaturas/Adepta/Celestine";
+import Triumph from "@/components/miniaturas/Adepta/Triumph";
 
 export default function MinAdepta (){
     return (
@@ -143,7 +148,7 @@ export default function MinAdepta (){
               <>
                 <View style={styles.tableCell}>
                   <Text style={styles.cellText}>
-                    <Text style={styles.wapo}>exito de conexion</Text>
+                    <Text style={styles.wapo}>Exito de conexion</Text>
                   </Text>
                 </View>
                 <View style={styles.tableCell}>
@@ -193,6 +198,11 @@ export default function MinAdepta (){
             </>
             <Morvenn/> 
             <Canoness/>
+            <Palatines/>
+            <Junith/>
+            <Missionary/>
+            <Celestine/>
+            <Triumph/>
         </ScrollView>
       );
     };
@@ -201,7 +211,7 @@ export default function MinAdepta (){
       border: {
         color: "#fff",
         fontWeight: "bold",
-        backgroundColor: "#2C0069",
+        backgroundColor: "#5D0300",
         fontSize: 20,
         padding: 5,
         marginTop: 6,
@@ -221,14 +231,14 @@ export default function MinAdepta (){
       tableRow: {
         flexDirection: "row", // Alinear elementos en fila
         borderBottomWidth: 1,
-        borderBottomColor: "#2C0069",
+        borderBottomColor: "#5D0300",
       },
       tableCelltop: {
         flex: 1, // Distribuye equitativamente el espacio entre columnas
         alignItems: "center", // Centra el contenido horizontalmente
         justifyContent: "center", // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: "#2C0069",
+        backgroundColor: "#5D0300",
         marginTop: 5,
         fontSize: 10,
       },
@@ -237,20 +247,20 @@ export default function MinAdepta (){
         alignItems: "center", // Centra el contenido horizontalmente
         justifyContent: "center", // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: "#C5ACE3",
+        backgroundColor: "#FFFFFF",
         fontSize: 10,
       },
       headerText: {
-        color: "#fff",
+        color: "#FFFFFF",
         fontWeight: "bold",
         fontSize: 20,
       },
       cellText: {
         fontSize: 14,
-        color: "#000",
+        color: "#000000",
       },
       wapo: {
-        color: "#2C0069",
+        color: "#000000",
         fontWeight: "bold",
       },
       MinDes: {

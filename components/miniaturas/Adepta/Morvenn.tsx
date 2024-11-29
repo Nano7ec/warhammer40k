@@ -12,11 +12,13 @@ export default function Morvenn(){
           Habilidades
         </Text>
         <Text style={styles.descrip}>
-          {'\n'}<Text style={styles.wapo}>Núcleo:</Text> Muerte Demoledora 1, Líder
+          <Text style={styles.wapo}>Núcleo:</Text> Muerte Demoledora 1, Líder
           {'\n'}<Text style={styles.wapo}>Faccion:</Text> Actos de Fe
           {'\n'}<Text style={styles.wapo}>Abadesa Sancturum:</Text> Mientras este modelo esté liderando una unidad, cada vez que un modelo de esa unidad haga un ataque, puedes repetir la tirada para impactar y repetir la tirada para herir.
           {'\n'}<Text style={styles.wapo}>Indignación Justa:</Text> Una vez por batalla, en tu fase de mando, este modelo puede usar esta habilidad. Si lo hace, hasta el inicio de tu próxima fase de mando, suma 3 a la característica de Ataques de Fidelis y la Lanza de Iluminación.
-          {'\n'}<Text style={styles.wapo}>Salvación Invulnerable: +4</Text>
+        </Text>
+        <Text style={styles.border2}>
+        Salvación Invulnerable: 4+
         </Text>
         {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
@@ -225,58 +227,81 @@ export default function Morvenn(){
         </View>
     );
 }
-
 const styles = StyleSheet.create({
-    border: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 20, padding: 5, marginTop: 6, borderTopLeftRadius: 10, borderTopRightRadius: 10,
-      marginLeft: 5,
-      marginRight: 5,
-     },
-    descrip: {fontSize: 18,
-      marginLeft: 5,
-      marginRight: 5, 
-      backgroundColor: '#C5ACE3', 
-      color: '#000000', 
-      paddingLeft: 3, 
-      paddingRight: 3, 
-      paddingBottom: 3, 
-      borderBottomLeftRadius: 10, 
-      borderBottomRightRadius: 10 },
-    image: { width: width, height: 100, borderRadius: 20, marginTop: 15 },
-    tableRow: {
-      flexDirection: 'row', // Alinear elementos en fila
-      borderBottomWidth: 1,
-      borderBottomColor: '#2C0069',
-    },
-    tableCelltop: {
-      flex: 1, // Distribuye equitativamente el espacio entre columnas
-      alignItems: 'center', // Centra el contenido horizontalmente
-      justifyContent: 'center', // Centra el contenido verticalmente
-      padding: 5,
-      backgroundColor: '#2C0069',
-      marginTop: 5,
-      fontSize: 10
-    },
-    tableCell: {
-      flex: 1, // Distribuye equitativamente el espacio entre columnas
-      alignItems: 'center', // Centra el contenido horizontalmente
-      justifyContent: 'center', // Centra el contenido verticalmente
-      padding: 5,
-      backgroundColor: '#C5ACE3',
-      fontSize: 10
-    },
-    headerText: {
-      color: '#fff', fontWeight: 'bold', fontSize: 20
-    },
-    cellText: {
-      fontSize: 14,
-      color: '#000',
-  
-    },
-    wapo: {
-      color: '#2C0069',
-      fontWeight: 'bold'
-    },
-    MinDes: {
-      fontSize: 18, color: '#000000', paddingLeft: 3, paddingRight: 3, paddingBottom: 3
-    }
-  });
+  image: { width: width, height: 100, borderRadius: 20, marginTop: 15 },
+  border: {
+    color: "#fff",
+    fontWeight: "bold",
+    backgroundColor: "#5D0300",
+    fontSize: 20,
+    padding: 5,
+    marginTop: 6,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  border2: {
+    color: "#fff",
+    fontWeight: "bold",
+    backgroundColor: "#5D0300",
+    fontSize: 20,
+    padding: 5,
+    marginTop: 6,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+
+  },
+  descrip: {
+    fontSize: 18,
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
+    paddingLeft: 3,
+    paddingRight: 3,
+    paddingBottom: 3,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  tableRow: {
+    flexDirection: "row", // Alinear elementos en fila
+    borderBottomWidth: 1,
+    borderBottomColor: "#5D0300",
+  },
+  tableCelltop: {
+    flex: 1, // Distribuye equitativamente el espacio entre columnas
+    alignItems: "center", // Centra el contenido horizontalmente
+    justifyContent: "center", // Centra el contenido verticalmente
+    padding: 5,
+    backgroundColor: "#5D0300",
+    marginTop: 5,
+    fontSize: 10,
+  },
+  tableCell: {
+    flex: 1, // Distribuye equitativamente el espacio entre columnas
+    alignItems: "center", // Centra el contenido horizontalmente
+    justifyContent: "center", // Centra el contenido verticalmente
+    padding: 5,
+    backgroundColor: "#FFFFFF",
+    fontSize: 10,
+  },
+  headerText: {
+    color: "#FFFFFF",
+    fontWeight: "bold",
+    fontSize: 20,
+  },
+  cellText: {
+    fontSize: 14,
+    color: "#000000",
+  },
+  wapo: {
+    color: "#000000",
+    fontWeight: "bold",
+  },
+  MinDes: {
+    fontSize: 18,
+    color: "#000000",
+    paddingLeft: 3,
+    paddingRight: 3,
+    paddingBottom: 3,
+  },
+});
