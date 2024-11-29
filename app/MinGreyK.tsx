@@ -1,12 +1,11 @@
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
-import Barbguants from '@/components/miniaturas/Tyranidos/Barbguants';
 import React from 'react';
-import Bivores from '@/components/miniaturas/Tyranidos/Bivores';
-import Broodlord from '@/components/miniaturas/Tyranidos/Broodlord';
-import Carnifexes from '@/components/miniaturas/Tyranidos/Carnifexes';
-import DeathLeaper from '@/components/miniaturas/Tyranidos/DeathLeaper';
-import Exocrine from '@/components/miniaturas/Tyranidos/Exocrine';
-import Gargoyles from '@/components/miniaturas/Tyranidos/Gargoyles';
+import BrotherCaptain from '@/components/miniaturas/GreyKnight/BrotherCaptain';
+import BrotherCaptainStern from '@/components/miniaturas/GreyKnight/BrotherCaptainStern';
+import CastellanCrowe from '@/components/miniaturas/GreyKnight/CastellanCrowe';
+import GrandMaster from '@/components/miniaturas/GreyKnight/GrandMaster';
+import GrandMasterNem from '@/components/miniaturas/GreyKnight/GrandMasterNem';
+import GrandMasterVoldus from '@/components/miniaturas/GreyKnight/GrandMasterVoldus';
 
 export default function MinT(){
     return(
@@ -187,15 +186,14 @@ export default function MinT(){
             </View>
           </>
         </View>
-
+        <BrotherCaptain/>
+        <BrotherCaptainStern/>
+        <CastellanCrowe/>
+        <GrandMaster/>
+        <GrandMasterNem/>
+        <GrandMasterVoldus/>
       </>
-      <Barbguants/> 
-      <Bivores/>
-      <Broodlord/>
-      <Carnifexes/>
-      <DeathLeaper/>
-      <Exocrine/>
-      <Gargoyles/>
+      
         </ScrollView>
     );
 }
