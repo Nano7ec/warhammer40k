@@ -1,4 +1,5 @@
 import { router } from "expo-router";
+import React from "react";
 import {Image, StyleSheet,Dimensions,View, Pressable } from 'react-native';
 
 const { width } = Dimensions.get('window');
@@ -7,12 +8,12 @@ export default function ArmyBloodAngel () {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla Army */}
-      <Pressable>
+      <Pressable onPress={()=> router.push('/BloodAngels')}>
         <Image resizeMode="stretch" source={require('../assets/images/armybloodangels.png')} style={styles.image} />
       </Pressable>
 
       {/* Imagen que navega a la pantalla Miniaturas */}
-      <Pressable onPress={()=> router.push('./MinBloodAngels')}>
+      <Pressable onPress={()=> router.push('../MinBloodAngel')}>
         <Image resizeMode="stretch" source={require('../assets/images/minibloodangels.png')} style={styles.image} />
       </Pressable>
 

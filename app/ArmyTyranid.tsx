@@ -1,5 +1,6 @@
 import { router } from 'expo-router';
-import {TouchableOpacity, Image, StyleSheet,Dimensions,View } from 'react-native';
+import React from 'react';
+import { Image, StyleSheet,Dimensions,View, Pressable } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
@@ -7,14 +8,14 @@ export default function ArmyTyrand(){
     return (
         <View style={styles.container}>
           {/* Imagen que navega a la pantalla BasicRule */}
-          <TouchableOpacity onPress={() => router.push('/Tyranidos')}>
+          <Pressable onPress={() => router.push('/Tyranidos')}>
             <Image resizeMode="stretch" source={require('../assets/images/Tyranids.png')} style={styles.image} />
-          </TouchableOpacity>
+          </Pressable>
     
           {/* Imagen que navega a la pantalla ArmyTyranid */}
-          <TouchableOpacity onPress={() => router.push('/MinT')}>
+          <Pressable onPress={() => router.push('/MinT')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinT.png')} style={styles.image} />
-          </TouchableOpacity>
+          </Pressable>
         </View>
       );
 };

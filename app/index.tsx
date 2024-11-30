@@ -1,5 +1,6 @@
 import { router } from "expo-router";
 import { Route } from "expo-router/build/Route";
+import React from "react";
 import {Image,StyleSheet, Dimensions, Pressable } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
@@ -38,8 +39,11 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/AmyAdepta')}>
       <Image resizeMode="stretch" source={require('../assets/images/ArmyAdepta.png')} style={style.image}/>      
       </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyAeldari')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyAeldari.png')} style={style.image}/>
+      </Pressable>
       <Pressable onPress={()=> router.push('/ArmyMechanicus')}>
-      <Image source={require ('../assets/images/ArmyAeldari.png')} style={style.image}/>
+      <Image source={require ('../assets/images/ArmyMecha.png')} style={style.image}/>
       </Pressable>
       <Pressable onPress={()=> router.push('/ArmyThou')}>
       <Image resizeMode="stretch" source={require("../assets/images/ArmyTousandS.png")}style={style.image}/>
@@ -74,7 +78,22 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/ArmyGenestealerCults')}>
       <Image source={require('../assets/images/ArmyGenestealerCults.png')} style={style.image}/>
       </Pressable>
-
+      <Pressable onPress={()=> router.push('/ArmyImperialKnight')}>
+      <Image source={require('../assets/images/ArmyImperialKnight.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyImperialA')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyImperialA.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyImperialGuard')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyimperialG.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyTauEmpire')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyTauEmpire.png')} style={style.image}/>
+      </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyLeagueOfVotan')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyLeagueofVotann.png')} style={style.image}/>
+      </Pressable>
+ 
     </ScrollView> 
   );
 };

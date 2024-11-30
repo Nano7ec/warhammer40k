@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import { Text, ScrollView, Dimensions, StyleSheet, View } from 'react-native';
 
  export default function MinChaosDemons (){
     return (

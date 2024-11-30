@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   maintitle: {
     color: "#fff",
     fontWeight: "bold",
-    backgroundColor: "#2C0069",
+    backgroundColor: "#5D0300",
     fontSize: 25,
     padding: 5,
     borderTopLeftRadius: 10,
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   title: {
     color: "#fff",
     fontWeight: "bold",
-    backgroundColor: "#2C0069",
+    backgroundColor: "#5D0300",
     fontSize: 20,
     padding: 5,
     borderTopLeftRadius: 10,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
     fontStyle: "italic",
-    backgroundColor: "#2C0069",
+    backgroundColor: "#5D0300",
     fontSize: 15,
     padding: 5,
     borderTopLeftRadius: 10,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     fontSize: 15,
-    backgroundColor: "#C5ACE3",
+    backgroundColor: "#FFFFFF",
     color: "#000000",
     paddingLeft: 3,
     paddingRight: 3,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   },
   italicdesc: {
     fontSize: 15,
-    backgroundColor: "#C5ACE3",
+    backgroundColor: "#FFFFFF",
     fontStyle: "italic",
     color: "#000000",
     paddingLeft: 3,

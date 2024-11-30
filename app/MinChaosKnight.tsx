@@ -1,5 +1,12 @@
+import CaballeroDesecrator from '@/components/miniaturas/ChaosKnight/CaballeroDesecrator';
+import CaballeroDespoiler from '@/components/miniaturas/ChaosKnight/CaballeroDespoiler';
+import EjecutorPerroDeGuerra from '@/components/miniaturas/ChaosKnight/EjecutorPerroDeGuerra';
+import WarDogBrigand from '@/components/miniaturas/ChaosKnight/WarDogBrigand';
+import WarDogHuntsman from '@/components/miniaturas/ChaosKnight/WarDogHuntsman';
+import WarDogKarnivore from '@/components/miniaturas/ChaosKnight/WarDogKarnivore';
+import WarDogStalker from '@/components/miniaturas/ChaosKnight/WarDogStalker';
 import * as React from 'react';
-import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import { Text, ScrollView, Dimensions, StyleSheet, View } from 'react-native';
  export default function MinBloodAngel (){
     return (
         <ScrollView style={styles.container}>
@@ -152,6 +159,14 @@ import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-nat
         </View>
     </>
 </View>
+
+<br/> <EjecutorPerroDeGuerra/>
+<br/> <WarDogStalker/>
+<br/> <WarDogKarnivore/>
+<br/> <WarDogBrigand/>
+<br/> <WarDogHuntsman/>
+<br/> <CaballeroDespoiler/>
+<br/> <CaballeroDesecrator/>
 </ScrollView>
     );
  };
@@ -163,13 +178,13 @@ import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-nat
         aspectRatio: 0.5,   // Mantiene las proporciones
         marginTop: 15,
     },
-    Titulo: {textTransform: 'uppercase', textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#ff0000', fontSize: 24, padding: 5, borderRadius: 10 },
-    Cabecera: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f'},
-    Tcabe: {flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5, backgroundColor: '#ff0000', marginTop: 5},
-    Ctext: {color: '#fff', fontWeight: 'bold', fontSize: 20},
-    Tabla: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'},
+    Titulo: {textTransform: 'uppercase', textAlign: 'center', color: '#000', fontWeight: 'bold', backgroundColor: '#5e4646', fontSize: 24, padding: 5, borderRadius: 10 },
+    Cabecera: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#5e4646'},
+    Tcabe: {flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5, backgroundColor: '#5e4646', marginTop: 5},
+    Ctext: {color: '#000', fontWeight: 'bold', fontSize: 20},
+    Tabla: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#8a7371', backgroundColor: '#8a7371'},
     Renglon: {flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5},
-    Concepto:{fontSize: 14, color: '#fff'},
-    Abre: {fontSize: 14, color: '#fff'},
+    Concepto:{fontSize: 14, color: '#000'},
+    Abre: {fontSize: 14, color: '#000'},
     container: { flex: 1, backgroundColor: '#c7b4a5', padding: 7},
 });
