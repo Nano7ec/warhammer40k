@@ -2,74 +2,25 @@ import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
-
+ 
 export default function Barbguants(){
     return(
         <View>
-           <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Barbguants.png')} />
+          <>
+        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Deathleaper.png')} />
         <Text style={styles.border}>
           Habilidades
         </Text>
         <Text style={styles.descrip}>
+          <Text style={styles.wapo}>Core:</Text> : Fights First, Infiltrators, Lone Operative, Stealth
           {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
-          {'\n'}<Text style={styles.wapo}>Bombardeo de interrupción:</Text> En tu fase de Disparo, después de que esta unidad haya disparado, si una unidad de Infantería enemiga fue alcanzada por uno o más de esos ataques realizados por los biocañones de esta unidad, hasta el final del siguiente turno de tu oponente, esa unidad enemiga queda desorganizada.
-          {'\n'}Mientras una unidad esté desorganizada, resta 2 a su característica Mover, y resta 2 a las tiradas de Avance y Carga que se hagan para ella.
+          {'\n'}<Text style={styles.wapo}>Feeder Tendrils:</Text> Cada vez que este modelo destruye un modelo de Personaje enemigo, ganas 1CP.
+          {'\n'}<Text style={styles.wapo}>Fear of the Unseen (Aura):</Text> Mientras una unidad enemiga esté a 6" o menos de esta miniatura, empeora el atributo Liderazgo de las miniaturas de esa unidad en 1.
+          {'\n'}Además, en el paso de Conmoción de batalla de la fase de Mando de tu oponente, si esa unidad enemiga está por debajo de su Fuerza inicial, debe efectuar un Battle-shock test.
         </Text>
-        {/* Cabecera de la tabla */}
-        <View style={styles.tableRow}>
-          <>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>AD</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>R</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>A</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>BS</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>S</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>AP</Text>
-            </View>
-            <View style={styles.tableCelltop}>
-              <Text style={styles.headerText}>D</Text>
-            </View>
-          </>
-        </View>
-        {/* Filas de la tabla armas cuerpo a cuerpo */}
-        <View style={styles.tableRow}>
-          <>
-            <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Bio-cannon [BLAST, HEAVY]</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>24"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D6</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        {/* Cabecera de la tabla armas distancia */}
+
+        {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCelltop}>
@@ -100,37 +51,44 @@ export default function Barbguants(){
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Lictor claws and talons [PRECISION]</Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>meele</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>6</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+</Text>
+              <Text style={styles.cellText}>2+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
+              <Text style={styles.cellText}>7</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
+              <Text style={styles.cellText}>-2</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>2</Text>
             </View>
           </>
         </View>
-        <>
-          <Text style={styles.border}>
-            Composicion de la min
-          </Text>
-          <Text style={styles.descrip}>■ 5-10 Barbgaunts
-            {'\n'}Cada modelo está equipado con: bio-cañón; garras xenos y dientes.
-            {'\n'}5 models ............................................................50 pts
-          {'\n'}10 models .......................................................100 pts</Text>
-        </>
+
+        <Text style={styles.border}>
+          COMPOSICIÓN DE LA UNIDAD
+        </Text>
+        <Text style={styles.descrip}>■ 1 Deathleaper - Epic Hero
+          {'\n'}Este modelo está equipado con: Garras y garras de Lictor.
+        </Text>
+
+        <Text style={styles.border}>
+          ORGANISMO CAZADOR
+        </Text>
+        <Text style={styles.descrip}>Este modelo no puede ser tu Señor de la Guerra.
+        </Text>
+        <Text style={styles.MinDes}>
+          1 model ..............................................................80 pts
+        </Text>
       </> 
         </View>
     );

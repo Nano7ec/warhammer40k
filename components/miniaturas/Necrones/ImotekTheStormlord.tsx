@@ -1,21 +1,31 @@
 import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
+import GauntletofFire from '../armas/GauntletofFire';
+import StaffoftheDestroyer from '../armas/StaffoftheDestroyer';
+import StaffoftheDestroyerDev from '../armas/StaffoftheDestroyerDev';
 
 const { width } = Dimensions.get('screen');
 
-export default function Barbguants(){
+export default function BrotherCaptain(){
     return(
         <View>
            <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Barbguants.png')} />
+        <Image resizeMode="stretch" style={styles.image} source={require('./img/ImotekhTheStormlord.png')} />
         <Text style={styles.border}>
           Habilidades
         </Text>
         <Text style={styles.descrip}>
-          {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
-          {'\n'}<Text style={styles.wapo}>Bombardeo de interrupción:</Text> En tu fase de Disparo, después de que esta unidad haya disparado, si una unidad de Infantería enemiga fue alcanzada por uno o más de esos ataques realizados por los biocañones de esta unidad, hasta el final del siguiente turno de tu oponente, esa unidad enemiga queda desorganizada.
-          {'\n'}Mientras una unidad esté desorganizada, resta 2 a su característica Mover, y resta 2 a las tiradas de Avance y Carga que se hagan para ella.
+        {'\n'}<Text style={styles.wapo}>Core:</Text>Leader
+          {'\n'}<Text style={styles.wapo}>Faccion:</Text> : Reanimation Protocols
+          {'\n'}<Text style={styles.wapo}>Grand Strategist:</Text> Al inicio de tu fase de Mando, si este modelo está en el campo de batalla, ganas 1CP.
+
+          {'\n'}<Text style={styles.wapo}>Lord of the Storm:</Text>Una vez por batalla, al final de tu fase de Mando, esta miniatura puede usar esta habilidad. Si lo hace, tira un D6 por cada unidad enemiga a 12» o menos de esta miniatura: con un resultado de 2-5, esa unidad enemiga sufre D3 heridas mortales; con un resultado de 6, esa unidad enemiga sufre D3+3 heridas mortales.
         </Text>
+
+        <Text style={styles.border}>
+          Invulnerable +4
+        </Text>
+
         {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
           <>
@@ -42,33 +52,11 @@ export default function Barbguants(){
             </View>
           </>
         </View>
-        {/* Filas de la tabla armas cuerpo a cuerpo */}
-        <View style={styles.tableRow}>
-          <>
-            <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Bio-cannon [BLAST, HEAVY]</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>24"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D6</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+"</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
+         {/* Filas de la tabla armas cuerpo a cuerpo */}
+         <GauntletofFire/>
+         <StaffoftheDestroyer/>
+
         {/* Cabecera de la tabla armas distancia */}
         <View style={styles.tableRow}>
           <>
@@ -96,40 +84,25 @@ export default function Barbguants(){
           </>
         </View>
         {/* Filas de la tabla */}
-        <View style={styles.tableRow}>
-          <>
-            <View style={styles.tableCell}>
+        <StaffoftheDestroyerDev/>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>meele</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
-            </View>
-            <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
-            </View>
-          </>
-        </View>
-        <>
+        <> 
+            <Text style={styles.border}>
+            Leader
+          </Text>
+          <Text style={styles.descrip}>Este modelo se puede acoplar a la siguiente unidad:
+          {'\n'}■ Immortals
+          {'\n'}■ Lychguard
+          {'\n'}■ Necron Warriors
+            </Text>
+
           <Text style={styles.border}>
             Composicion de la min
           </Text>
-          <Text style={styles.descrip}>■ 5-10 Barbgaunts
-            {'\n'}Cada modelo está equipado con: bio-cañón; garras xenos y dientes.
-            {'\n'}5 models ............................................................50 pts
-          {'\n'}10 models .......................................................100 pts</Text>
+          <Text style={styles.descrip}>■ 1 Imotekh the Stormlord – Heroe Epico
+            {'\n'}Cada modelo está equipado con: Gauntlet of Fire; Staff of the Destroyer.
+            {'\n'}1 model ............................................................105 pts
+            </Text>
         </>
       </> 
         </View>
@@ -137,7 +110,14 @@ export default function Barbguants(){
 }
 
 const styles = StyleSheet.create({
-    border: { color: '#fff', fontWeight: 'bold', backgroundColor: '#2C0069', fontSize: 20, padding: 5, marginTop: 6, borderTopLeftRadius: 10, borderTopRightRadius: 10,
+    border: { color: '#fff', 
+        fontWeight: 'bold', 
+        backgroundColor: '#2C0069',
+        fontSize: 20, 
+        padding: 5, 
+        marginTop: 6, 
+        borderTopLeftRadius: 10, 
+        borderTopRightRadius: 10,
       marginLeft: 5,
       marginRight: 5,
      },

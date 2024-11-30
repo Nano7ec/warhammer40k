@@ -3,18 +3,20 @@ import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
-export default function Barbguants(){
+export default function Bivores(){
     return(
         <View>
-           <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Barbguants.png')} />
+        {/**Biovores */}
+      <>
+        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Biovores.png')} />
         <Text style={styles.border}>
           Habilidades
         </Text>
         <Text style={styles.descrip}>
+          <Text style={styles.wapo}>Core:</Text>Deadly Demise 1
           {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
-          {'\n'}<Text style={styles.wapo}>Bombardeo de interrupción:</Text> En tu fase de Disparo, después de que esta unidad haya disparado, si una unidad de Infantería enemiga fue alcanzada por uno o más de esos ataques realizados por los biocañones de esta unidad, hasta el final del siguiente turno de tu oponente, esa unidad enemiga queda desorganizada.
-          {'\n'}Mientras una unidad esté desorganizada, resta 2 a su característica Mover, y resta 2 a las tiradas de Avance y Carga que se hagan para ella.
+          {'\n'}<Text style={styles.wapo}>Minas de esporas de semillas:</Text>  En tu fase de Disparo, cada vez que esta unidad sea seleccionada para disparar, puede usar esta habilidad en vez de efectuar cualquier ataque con sus armas a distancia.
+          {'\n'}Si lo hace, puedes añadir una nueva unidad de Minas de esporas a tu ejército y colocarla en cualquier lugar del campo de batalla que esté a 48" o menos de esta unidad pero a más de 9" en horizontal de todas las unidades enemigas. Esa unidad de Minas de esporas contiene 1 modelo por cada modelo de esta unidad.
         </Text>
         {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
@@ -42,34 +44,35 @@ export default function Barbguants(){
             </View>
           </>
         </View>
-        {/* Filas de la tabla armas cuerpo a cuerpo */}
+        {/* Filas de la tabla */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Bio-cannon [BLAST, HEAVY]</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Spore Mine launcher
+                [BLAST, DEVASTATING WOUNDS, HEAVY, INDIRECT FIRE]</Text></Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>24"</Text>
+              <Text style={styles.cellText}>48"</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D6</Text>
+              <Text style={styles.cellText}>D3</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>4+"</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
+              <Text style={styles.cellText}>6</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
+              <Text style={styles.cellText}>-1</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>2</Text>
             </View>
           </>
         </View>
-        {/* Cabecera de la tabla armas distancia */}
+        {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCelltop}>
@@ -100,19 +103,19 @@ export default function Barbguants(){
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Chitin-barbed limbs </Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>meele</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>2</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>4+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
+              <Text style={styles.cellText}>5</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>0</Text>
@@ -126,12 +129,16 @@ export default function Barbguants(){
           <Text style={styles.border}>
             Composicion de la min
           </Text>
-          <Text style={styles.descrip}>■ 5-10 Barbgaunts
-            {'\n'}Cada modelo está equipado con: bio-cañón; garras xenos y dientes.
-            {'\n'}5 models ............................................................50 pts
-          {'\n'}10 models .......................................................100 pts</Text>
+          <Text style={styles.descrip}>■ 1-3 Biovores
+            {'\n'}Cada modelo está equipado con: Lanzador de minas de esporas; extremidades con barras de quitina.
+          </Text>
         </>
-      </> 
+        <Text style={styles.MinDes}>
+          1 model ..............................................................40 pts
+          {'\n'}2 models ............................................................80 pts
+          {'\n'}3 models ..........................................................120 pts
+        </Text>
+      </>
         </View>
     );
 }

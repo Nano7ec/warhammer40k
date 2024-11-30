@@ -7,16 +7,24 @@ export default function Barbguants(){
     return(
         <View>
            <>
-        <Image resizeMode="stretch" style={styles.image} source={require('../Tyranidos/imagenes/Barbguants.png')} />
+        <Image resizeMode="stretch" style={styles.image} source={require('./imagenes/Exocrine.png')} />
         <Text style={styles.border}>
-          Habilidades
+        DAMAGED:
         </Text>
         <Text style={styles.descrip}>
-          {'\n'}<Text style={styles.wapo}>Faccion:</Text> Synapse
-          {'\n'}<Text style={styles.wapo}>Bombardeo de interrupción:</Text> En tu fase de Disparo, después de que esta unidad haya disparado, si una unidad de Infantería enemiga fue alcanzada por uno o más de esos ataques realizados por los biocañones de esta unidad, hasta el final del siguiente turno de tu oponente, esa unidad enemiga queda desorganizada.
-          {'\n'}Mientras una unidad esté desorganizada, resta 2 a su característica Mover, y resta 2 a las tiradas de Avance y Carga que se hagan para ella.
+          {'\n'}1-5 HERIDAS RESTANTES Mientras este modelo tenga 1-5 heridas restantes, cada vez que este modelo haga un ataque, resta 1 de la tirada para golpear.
         </Text>
-        {/* Cabecera de la tabla */}
+
+        <Text style={styles.border}>
+          ORGANISMO CAZADOR
+        </Text>
+        <Text style={styles.descrip}>Este modelo no puede ser tu Señor de la Guerra.
+        </Text>
+        <Text style={styles.MinDes}>
+          1 model ..............................................................80 pts
+        </Text>
+
+        {/* Cabecera de la tabla daño distancia */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCelltop}>
@@ -42,34 +50,36 @@ export default function Barbguants(){
             </View>
           </>
         </View>
-        {/* Filas de la tabla armas cuerpo a cuerpo */}
+        {/* Filas de la tabla de armas distancia */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Bio-cannon [BLAST, HEAVY]</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Bio-plasmic cannon [BLAST, HEAVY]</Text></Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>24"</Text>
+              <Text style={styles.cellText}>36"</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>D6</Text>
+              <Text style={styles.cellText}>D6+3"</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+"</Text>
+              <Text style={styles.cellText}>3+"</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>5</Text>
+              <Text style={styles.cellText}>8</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>0</Text>
+              <Text style={styles.cellText}>-3</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>3</Text>
             </View>
           </>
         </View>
-        {/* Cabecera de la tabla armas distancia */}
+
+
+        {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
           <>
             <View style={styles.tableCelltop}>
@@ -100,38 +110,45 @@ export default function Barbguants(){
           <>
             <View style={styles.tableCell}>
 
-              <Text style={styles.cellText}><Text style={styles.wapo}>Xenos claws and teeth</Text></Text>
+              <Text style={styles.cellText}><Text style={styles.wapo}>Powerful limbs</Text></Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>meele</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>3</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4+</Text>
+              <Text style={styles.cellText}>3+</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>4</Text>
+              <Text style={styles.cellText}>7</Text>
             </View>
             <View style={styles.tableCell}>
               <Text style={styles.cellText}>0</Text>
             </View>
             <View style={styles.tableCell}>
-              <Text style={styles.cellText}>1</Text>
+              <Text style={styles.cellText}>2</Text>
             </View>
           </>
         </View>
-        <>
-          <Text style={styles.border}>
-            Composicion de la min
-          </Text>
-          <Text style={styles.descrip}>■ 5-10 Barbgaunts
-            {'\n'}Cada modelo está equipado con: bio-cañón; garras xenos y dientes.
-            {'\n'}5 models ............................................................50 pts
-          {'\n'}10 models .......................................................100 pts</Text>
-        </>
-      </> 
+
+        <Text style={styles.border}>
+          COMPOSICIÓN DE LA UNIDAD
+        </Text>
+        <Text style={styles.descrip}>■ 1 Deathleaper - Epic Hero
+          {'\n'}Este modelo está equipado con: Garras y garras de Lictor.
+        </Text>
+
+        <Text style={styles.border}>
+          ORGANISMO CAZADOR
+        </Text>
+        <Text style={styles.descrip}>Este modelo no puede ser tu Señor de la Guerra.
+        </Text>
+        <Text style={styles.MinDes}>
+          1 model ..............................................................80 pts
+        </Text>
+      </>
         </View>
     );
 }
