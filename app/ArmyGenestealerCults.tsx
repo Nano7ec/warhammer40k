@@ -10,6 +10,9 @@ export default function GenestealerCults () {
       <Pressable onPress={()=> router.push('/GenestalerCults')}>
         <Image resizeMode="stretch" source={require('../assets/images/GenestealerCultsRules.png')} style={styles.image} />
       </Pressable>
+      <Pressable onPress={()=> router.push('/MinGenestealerCults')}>
+        <Image resizeMode="stretch" source={require('../assets/images/MinGenestealerCults.png')} style={styles.image} />
+      </Pressable>
     </View>
   );
 };

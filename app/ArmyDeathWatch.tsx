@@ -10,6 +10,9 @@ export default function Deathwatch () {
       <Pressable onPress={()=> router.push('/DeathWatch')}>
         <Image resizeMode="stretch" source={require('../assets/images/DeathWatchRules.png')} style={styles.image} />
       </Pressable>
+      <Pressable onPress={()=> router.push('/MinDeathWatch')}>
+        <Image resizeMode="stretch" source={require('../assets/images/MinDeathWatch.png')} style={styles.image} />
+      </Pressable>
     </View>
   );
 };

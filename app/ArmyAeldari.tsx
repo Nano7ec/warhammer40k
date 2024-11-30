@@ -9,7 +9,7 @@ export default function ArmyAeldari (){
             <Pressable onPress={()=> router.push('/Aeldari')}>
                 <Image source={require ('../assets/images/ArmyAeldari.png')} style={styles.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinAeldari')}>
                 <Image source={require ('../assets/images/MinAeldari.png')} style={styles.image}/>
             </Pressable>
         </View>
