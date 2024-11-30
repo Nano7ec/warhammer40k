@@ -39,8 +39,11 @@ export default function Index() {
       <Pressable onPress={()=> router.push('/AmyAdepta')}>
       <Image resizeMode="stretch" source={require('../assets/images/ArmyAdepta.png')} style={style.image}/>      
       </Pressable>
+      <Pressable onPress={()=> router.push('/ArmyAeldari')}>
+      <Image resizeMode="stretch" source={require('../assets/images/ArmyAeldari.png')} style={style.image}/>
+      </Pressable>
       <Pressable onPress={()=> router.push('/ArmyMechanicus')}>
-      <Image source={require ('../assets/images/ArmyAeldari.png')} style={style.image}/>
+      <Image source={require ('../assets/images/ArmyMecha.png')} style={style.image}/>
       </Pressable>
       <Pressable onPress={()=> router.push('/ArmyThou')}>
       <Image resizeMode="stretch" source={require("../assets/images/ArmyTousandS.png")}style={style.image}/>
