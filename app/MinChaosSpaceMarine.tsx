@@ -1,159 +1,173 @@
+import AbaddonElSaqueador from '@/components/miniaturas/ChaosSpaceMarine/AbaddonElSaqueador';
+import Cypher from '@/components/miniaturas/ChaosSpaceMarine/Cypher';
+import FabiusBile from '@/components/miniaturas/ChaosSpaceMarine/FabiusBile';
+import HaarkenWorldclaimer from '@/components/miniaturas/ChaosSpaceMarine/HaarkenWorldclaimer';
+import HuronBlackheart from '@/components/miniaturas/ChaosSpaceMarine/HuronBlackheart';
+import PrincipeDemonio from '@/components/miniaturas/ChaosSpaceMarine/PrincipeDemonio';
+import PrincipeDemonioWings from '@/components/miniaturas/ChaosSpaceMarine/PrincipeDemonioWings';
 import * as React from 'react';
 import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
  
 export default function MinChaosSpaceMarine () {
     return(
-        <ScrollView style={{ flex: 1, backgroundColor: '#ff9f9f', padding: 7}}>
+        <ScrollView style={{ flex: 1, backgroundColor: '#75332c', padding: 7}}>
             {/**INICIA LA TABLA DE LA GRAMATICA */}
-    <Text style={{textTransform: 'uppercase', textAlign: 'center', color: '#fff', fontWeight: 'bold', backgroundColor: '#ff0000', fontSize: 24, padding: 5, borderRadius: 10 }}>
+    <Text style={styles.Titulo}>
         Gramatica Usada
     </Text>
 {/* Cabecera de la tabla */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f'}}>
+<View style={styles.Cabecera}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5, backgroundColor: '#ff0000', marginTop: 5}}>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>Concepto</Text>
+        <View style={styles.Tcabe}>
+            <Text style={styles.Ctext}>Concepto</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5, backgroundColor: '#ff0000', marginTop: 5}}>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>Abreviatura</Text>
+        <View style={styles.Tcabe}>
+            <Text style={styles.Ctext}>Abreviatura</Text>
         </View>
     </>
 </View>
 
 {/* Filas de la tabla */}
 {/* Movimiento */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Movimiento</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Movimiento</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>M</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>M</Text>
         </View>
     </>
 </View>
 
 {/* Dureza */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Dureza</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Dureza</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>T</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>T</Text>
         </View>
     </>
 </View>
 
 {/* Salvación */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Salvación</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Salvación</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>SV</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>SV</Text>
         </View>
     </>
 </View>
 
 {/* Heridas */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Heridas</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Heridas</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>W</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>W</Text>
         </View>
     </>
 </View>
 
 {/* Liderazgo */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Liderazgo</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Liderazgo</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Ld</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>Ld</Text>
         </View>
     </>
 </View>
 
 {/* Objetivo de Control */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Objetivo de Control</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Objetivo de Control</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>OC</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>OC</Text>
         </View>
     </>
 </View>
 
 {/* Habilidad de Arma */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Habilidad de Arma</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}> Habilidad de Arma </Text>
+
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>WS</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>WS</Text>
         </View>
     </>
 </View>
 
 {/* Habilidad de Disparo */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Habilidad de Disparo</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Habilidad de Disparo</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>BS</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>BS</Text>
         </View>
     </>
 </View>
 
 {/* Fuerza */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Fuerza</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Fuerza</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>S</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>S</Text>
         </View>
     </>
 </View>
 
 {/* Penetración de Armadura */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Penetración de Armadura</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Penetración de Armadura</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>AP</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>AP</Text>
         </View>
     </>
 </View>
 
 {/* Daño */}
-<View style={{flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#c03f3f', backgroundColor: '#c03f3f'}}>
+<View style={styles.Tabla}>
     <>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>Daño</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Concepto}>Daño</Text>
         </View>
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5}}>
-            <Text style={{fontSize: 14, color: '#fff'}}>D</Text>
+        <View style={styles.Renglon}>
+            <Text style={styles.Abre}>D</Text>
         </View>
     </>
 </View>
 {/** FINALIZACION DE LA TABLA DE LA GRAMATICA*/}
-
+<br/> <AbaddonElSaqueador/>
+<br/> <HaarkenWorldclaimer/>
+<br/> <HuronBlackheart/>
+<br/> <PrincipeDemonio/>
+<br/> <PrincipeDemonioWings/>
+<br/> <FabiusBile/>
+<br/> <Cypher/>
 </ScrollView>
     );
 
@@ -166,10 +180,13 @@ const styles = StyleSheet.create({
         aspectRatio: 0.5,   // Mantiene las proporciones
         marginTop: 15,
     },
-    Palabrasclave:{flex: 1, // Distribuye equitativamente el espacio entre columnas
-        alignItems: 'center', // Centra el contenido horizontalmente
-        justifyContent: 'center', // Centra el contenido verticalmente
-        padding: 5,backgroundColor: '#ff0000',marginTop: 5,fontSize: 10},
-    extra:{flexDirection: 'row', // Alinear elementos en fila
-        borderBottomWidth: 1,borderBottomColor: '#c03f3f',backgroundColor: '#c03f3f',fontSize: 10}
+    Titulo: {textTransform: 'uppercase', textAlign: 'center', color: '#000', fontWeight: 'bold', backgroundColor: '#676b6c', fontSize: 24, padding: 5, borderRadius: 10 },
+    Cabecera: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#5e4646'},
+    Tcabe: {flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5, backgroundColor: '#676b6c', marginTop: 5},
+    Ctext: {color: '#000', fontWeight: 'bold', fontSize: 20},
+    Tabla: {flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#6f7773', backgroundColor: '#6f7773'},
+    Renglon: {flex: 1, alignItems: 'center', justifyContent: 'center', padding: 5},
+    Concepto:{fontSize: 14, color: '#000'},
+    Abre: {fontSize: 14, color: '#000'},
+    container: { flex: 1, backgroundColor: '#c7b4a5', padding: 7},
 });
