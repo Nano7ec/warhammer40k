@@ -10,7 +10,7 @@ export default function(){
             <Pressable onPress={()=> router.push('/BlackTemplars')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyBlackT.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinBlackTemplars')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinBlacT.png')} style={style.image}/>
             </Pressable>
         </View>
