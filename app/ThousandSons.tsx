@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, ScrollView, StyleSheet } from "react-native";
 
-export default function TousandSons (){
+export default function ThousandSons (){
     return (
         <ScrollView style={styles.scroll}>
           <Text style={styles.maintitle}>REGLA DEL EJÉRCITO</Text>
@@ -127,7 +127,7 @@ export default function TousandSons (){
       maintitle: {
         color: "#fff",
         fontWeight: "bold",
-        backgroundColor: "#4A0072",
+        backgroundColor: "#005D66",
         fontSize: 25,
         padding: 10,
         borderRadius: 10,
@@ -136,7 +136,7 @@ export default function TousandSons (){
       subtitle: {
         color: "#fff",
         fontWeight: "bold",
-        backgroundColor: "#6A1B9A",
+        backgroundColor: "#005D66",
         fontSize: 20,
         padding: 8,
         borderRadius: 10,
@@ -144,7 +144,7 @@ export default function TousandSons (){
       },
       desc: {
         fontSize: 16,
-        backgroundColor: "#E1BEE7",
+        backgroundColor: "#FFFFFF",
         color: "#000",
         padding: 8,
         borderRadius: 10,
@@ -155,7 +155,7 @@ export default function TousandSons (){
       },
       scroll: {
         flex: 1,
-        backgroundColor: "#311B92",
+        backgroundColor: "#E5E6E8",
         padding: 10,
       },
     });

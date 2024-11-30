@@ -10,7 +10,7 @@ return(
         <Pressable onPress={()=> router.push('/ThousandSons')}>
             <Image resizeMode="stretch" source={require("../assets/images/ArmyTousandS.png")}style={style.image}/>
         </Pressable>
-        <Pressable>
+        <Pressable onPress={()=> router.push('/MinThousandSons')}>
             <Image resizeMode="stretch" source={require("../assets/images/MinTousandS.png")}style={style.image}/>
         </Pressable>
     </View>
