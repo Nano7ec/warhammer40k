@@ -6,6 +6,7 @@ import Kastelan from "@/components/miniaturas/Mechanicus/Kastelan";
 import Stratoraptor from "@/components/miniaturas/Mechanicus/Stratoraptor";
 import Transvector from "@/components/miniaturas/Mechanicus/Transvector";
 import { router } from "expo-router";
+import React from "react";
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
 
 export default function MinMechanicus (){

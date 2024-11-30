@@ -7,6 +7,7 @@ import AutarchWayleaper from "@/components/miniaturas/Aeldari/AutarchWayleaper";
 import Avatar from "@/components/miniaturas/Aeldari/Avatar";
 import Baharroth from "@/components/miniaturas/Aeldari/Baharroth";
 import Corsair from "@/components/miniaturas/Aeldari/Corsair";
+import React from "react";
 
 export default function MinAeldari (){
     return (

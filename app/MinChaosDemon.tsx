@@ -5,6 +5,7 @@ import Rendmaster from '@/components/miniaturas/ChaosDaemons/Rendmaster';
 import Skarbrand from '@/components/miniaturas/ChaosDaemons/Skarbrand';
 import Skullmaster from '@/components/miniaturas/ChaosDaemons/Skullmaster';
 import Skulltaker from '@/components/miniaturas/ChaosDaemons/Skulltaker';
+import React from 'react';
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
 export default function MinChaosDemon (){
 return(

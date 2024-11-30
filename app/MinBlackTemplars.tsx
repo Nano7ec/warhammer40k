@@ -1,12 +1,5 @@
 import { router } from "expo-router";
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
-import Asurmen from "@/components/miniaturas/Aeldari/Asurmen";
-import Autarch from "@/components/miniaturas/Aeldari/Autarch";
-import AutarchSkyrunner from "@/components/miniaturas/Aeldari/AutarchSkyrunner";
-import AutarchWayleaper from "@/components/miniaturas/Aeldari/AutarchWayleaper";
-import Avatar from "@/components/miniaturas/Aeldari/Avatar";
-import Baharroth from "@/components/miniaturas/Aeldari/Baharroth";
-import Corsair from "@/components/miniaturas/Aeldari/Corsair";
 import ChaplainGrimaldus from "@/components/miniaturas/BlackTemplars/ChaplainGrimaldus";
 import CrusaderSquad from "@/components/miniaturas/BlackTemplars/CrusaderSquad";
 import HighMarshal from "@/components/miniaturas/BlackTemplars/HighMarshal";
@@ -14,6 +7,7 @@ import PrimarisCrusader from "@/components/miniaturas/BlackTemplars/PrimarisCrus
 import PrimarisSword from "@/components/miniaturas/BlackTemplars/PrimarisSword";
 import EmperorsChampion from "@/components/miniaturas/BlackTemplars/EmperorsChampion";
 import Castellan from "@/components/miniaturas/BlackTemplars/Castellan";
+import React from "react";
 
 export default function MinBlackTemplars (){
     return (

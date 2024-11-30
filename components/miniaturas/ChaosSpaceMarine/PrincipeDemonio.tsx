@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
@@ -5,7 +6,7 @@ const { width } = Dimensions.get('screen');
 export default function PrincipeDemonio() {
     return (
         <View>
-            <Image resizeMode="stretch" style={styles.image} source={require('../ChaosSpaceMarine/images/heretic.png')} />
+            <Image resizeMode="stretch" style={styles.image} source={require('../ChaosSpaceMarine/images/Heretic.png')} />
             <Text style={styles.border}>PRÍNCIPE DEMONIO DE LOS ASTARTES HEREJES</Text>
 
             {/* Atributos */}

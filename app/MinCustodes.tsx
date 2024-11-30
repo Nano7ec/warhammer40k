@@ -7,6 +7,7 @@ import Vertus from "@/components/miniaturas/Custodes/Vertus";
 import Prosecutors from "@/components/miniaturas/Custodes/Prosecutors";
 import Vigilators from "@/components/miniaturas/Custodes/Vigilators";
 import Witchseekers from "@/components/miniaturas/Custodes/Witchseekers";
+import React from "react";
 
 export default function MinAeldari (){
     return (

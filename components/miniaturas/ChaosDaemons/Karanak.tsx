@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
@@ -5,7 +6,7 @@ const { width } = Dimensions.get('screen');
 export default function Karanak() {
     return (
         <View>
-            <Image resizeMode="stretch" style={styles.image} source={require('../ChaosDaemons/images/karanak.png')} />
+            <Image resizeMode="stretch" style={styles.image} source={require('../ChaosDaemons/images/Karanak.png')} />
             <Text style={styles.border}>Habilidades</Text>
             <Text style={styles.descrip}>
                 {'\n'}<Text style={styles.wapo}>Palabras clave:</Text> Bestia, Personaje, Héroe Épico, Caos, Demonio, Khorne, Karanak

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
