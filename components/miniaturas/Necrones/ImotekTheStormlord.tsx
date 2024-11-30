@@ -6,7 +6,7 @@ import StaffoftheDestroyerDev from '../armas/StaffoftheDestroyerDev';
 
 const { width } = Dimensions.get('screen');
 
-export default function BrotherCaptain(){
+export default function ImotekhTheStormlord(){
     return(
         <View>
            <>

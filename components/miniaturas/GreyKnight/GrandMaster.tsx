@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
-import StormBolter from '../armas/StormBolter';
+import StormBolter from './armas/StormBolter';
 import Incinerator from '../armas/Incinerator';
 import Psilencer from '../armas/Psilencer';
 import Psycannon from '../armas/Psycannon';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
-import StormBolter from '../armas/StormBolter';
+import StormBolter from './armas/StormBolter';
 import NemesisForceSword from '../armas/NemesisForceSword';
 
 const { width } = Dimensions.get('screen');

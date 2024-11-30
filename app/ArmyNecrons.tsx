@@ -10,7 +10,7 @@ export default function ArmyNecrons(){
             <Pressable onPress={()=> router.push('/Necrons')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyNecrons.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('./MinNecrones')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinNecro.png')} style={style.image}/>
             </Pressable>
         </View>

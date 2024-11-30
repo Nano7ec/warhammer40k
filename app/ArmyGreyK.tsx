@@ -10,7 +10,7 @@ export default function ArmyGreyK(){
             <Pressable onPress={()=> router.push('/GreyK')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyGrek.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinGreyK')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinGreyK.png')} style={style.image}/>
             </Pressable>
         </View>

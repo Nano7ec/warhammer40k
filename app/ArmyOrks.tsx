@@ -10,7 +10,7 @@ export default function ArmyOrks(){
             <Pressable onPress={()=> router.push('/Orks')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyOrks.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('./MinOrks')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinOrks.png')} style={style.image}/>
             </Pressable>
         </View>
