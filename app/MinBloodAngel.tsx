@@ -1,6 +1,15 @@
 import * as React from 'react';
 import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
- export default function MinBloodAngel (){
+import Astorath from '@/components/miniaturas/BloodAngels/Astorath';
+import BaalPredator from '@/components/miniaturas/BloodAngels/BaalPredator';
+import ChiefLibrarianMephiston from '@/components/miniaturas/BloodAngels/ChiefLibrarianMephiston';
+import BrotherCorbulo from '@/components/miniaturas/BloodAngels/BrotherCorbulo';
+import CapitanTycho from '@/components/miniaturas/BloodAngels/CapitanTycho';
+import ComandanteDante from '@/components/miniaturas/BloodAngels/ComandanteDante';
+import CompañiaDeLaMuerte from '@/components/miniaturas/BloodAngels/CompañiaDeLaMuerte';
+ 
+
+export default function MinBloodAngel (){
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#ff9f9f', padding: 7}}>
             {/**INICIA LA TABLA DE LA GRAMATICA */}
@@ -152,6 +161,13 @@ import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-nat
         </View>
     </>
 </View>
+<br/> <Astorath/>
+<br/> <BaalPredator/>
+<br/> <ChiefLibrarianMephiston/>
+<br/> <BrotherCorbulo/>
+<br/> <CapitanTycho/>
+<br/> <ComandanteDante/>
+<br/> <CompañiaDeLaMuerte/>
 </ScrollView>
     );
  };

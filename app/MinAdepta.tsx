@@ -1,12 +1,5 @@
-import { router } from "expo-router";
+import React from 'react';
 import {Text, ScrollView, StyleSheet, View} from 'react-native'
-import Morvenn from '@/components/miniaturas/Adepta/Morvenn';
-import Canoness from "@/components/miniaturas/Adepta/Canoness";
-import Palatines from "@/components/miniaturas/Adepta/Palatine";
-import Junith from "@/components/miniaturas/Adepta/Junith";
-import Missionary from "@/components/miniaturas/Adepta/Missionary";
-import Celestine from "@/components/miniaturas/Adepta/Celestine";
-import Triumph from "@/components/miniaturas/Adepta/Triumph";
 
 export default function MinAdepta (){
     return (
@@ -17,7 +10,7 @@ export default function MinAdepta (){
             <View style={styles.tableRow}>
               <>
                 <View style={styles.tableCelltop}>
-                  <Text style={styles.headerText}>Palabra</Text>
+                  <Text style={styles.headerText}>Paabra</Text>
                 </View>
                 <View style={styles.tableCelltop}>
                   <Text style={styles.headerText}>Acronimos</Text>
@@ -148,7 +141,7 @@ export default function MinAdepta (){
               <>
                 <View style={styles.tableCell}>
                   <Text style={styles.cellText}>
-                    <Text style={styles.wapo}>Exito de conexion</Text>
+                    <Text style={styles.wapo}>exito de conexion</Text>
                   </Text>
                 </View>
                 <View style={styles.tableCell}>
@@ -196,13 +189,6 @@ export default function MinAdepta (){
               </>
             </View>
             </>
-            <Morvenn/> 
-            <Canoness/>
-            <Palatines/>
-            <Junith/>
-            <Missionary/>
-            <Celestine/>
-            <Triumph/>
         </ScrollView>
       );
     };
@@ -211,7 +197,7 @@ export default function MinAdepta (){
       border: {
         color: "#fff",
         fontWeight: "bold",
-        backgroundColor: "#5D0300",
+        backgroundColor: "#2C0069",
         fontSize: 20,
         padding: 5,
         marginTop: 6,
@@ -231,14 +217,14 @@ export default function MinAdepta (){
       tableRow: {
         flexDirection: "row", // Alinear elementos en fila
         borderBottomWidth: 1,
-        borderBottomColor: "#5D0300",
+        borderBottomColor: "#2C0069",
       },
       tableCelltop: {
         flex: 1, // Distribuye equitativamente el espacio entre columnas
         alignItems: "center", // Centra el contenido horizontalmente
         justifyContent: "center", // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: "#5D0300",
+        backgroundColor: "#2C0069",
         marginTop: 5,
         fontSize: 10,
       },
@@ -247,20 +233,20 @@ export default function MinAdepta (){
         alignItems: "center", // Centra el contenido horizontalmente
         justifyContent: "center", // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#C5ACE3",
         fontSize: 10,
       },
       headerText: {
-        color: "#FFFFFF",
+        color: "#fff",
         fontWeight: "bold",
         fontSize: 20,
       },
       cellText: {
         fontSize: 14,
-        color: "#000000",
+        color: "#000",
       },
       wapo: {
-        color: "#000000",
+        color: "#2C0069",
         fontWeight: "bold",
       },
       MinDes: {

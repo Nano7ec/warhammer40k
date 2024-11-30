@@ -1,5 +1,12 @@
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
 import Barbguants from '@/components/miniaturas/Tyranidos/Barbguants';
+import React from 'react';
+import Bivores from '@/components/miniaturas/Tyranidos/Bivores';
+import Broodlord from '@/components/miniaturas/Tyranidos/Broodlord';
+import Carnifexes from '@/components/miniaturas/Tyranidos/Carnifexes';
+import DeathLeaper from '@/components/miniaturas/Tyranidos/DeathLeaper';
+import Exocrine from '@/components/miniaturas/Tyranidos/Exocrine';
+import Gargoyles from '@/components/miniaturas/Tyranidos/Gargoyles';
 
 export default function MinT(){
     return(
@@ -183,6 +190,12 @@ export default function MinT(){
 
       </>
       <Barbguants/> 
+      <Bivores/>
+      <Broodlord/>
+      <Carnifexes/>
+      <DeathLeaper/>
+      <Exocrine/>
+      <Gargoyles/>
         </ScrollView>
     );
 }

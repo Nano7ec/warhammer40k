@@ -1,4 +1,5 @@
-import { router, Router } from "expo-router";
+import { router} from "expo-router";
+import React from "react";
 import { Image, StyleSheet,Dimensions,View, Pressable } from 'react-native';
 
 const { width } = Dimensions.get('window');
@@ -12,7 +13,7 @@ export default function ArmyChaosDemon (){
         </Pressable>
   
         {/* Imagen que navega a la pantalla BasicRule */}
-        <Pressable>
+        <Pressable onPress={()=> router.push('../MinChaosDemon')}>
           <Image resizeMode="stretch" source={require('../assets/images/minichaosdaemons.png')} style={styles.image} />
         </Pressable>
   

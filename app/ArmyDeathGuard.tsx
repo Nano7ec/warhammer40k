@@ -10,6 +10,9 @@ export default function ArmyDeathGuard() {
       <Pressable onPress={()=> router.push('/DeathGuard')}>
         <Image resizeMode="stretch" source={require('../assets/images/DeathGuardRules.png')} style={styles.image} />
       </Pressable>
+      <Pressable onPress={()=> router.push('/MinDeathGuard')}>
+      <Image resizeMode="stretch" source={require('../assets/images/MinDeathGuard.png')} style={styles.image} />
+    </Pressable>
     </View>
   );
 };
