@@ -4,18 +4,20 @@ import {Image,StyleSheet, Dimensions, Pressable,View } from "react-native";
 
 const {width} = Dimensions.get('screen')
 
-export default function ArmyNecrons(){
-    return (
-        <View style={style.container} >
-            <Pressable onPress={()=> router.push('/Necrons')}>
-            <Image resizeMode="stretch" source={require('../assets/images/ArmyNecrons.png')} style={style.image}/>
+
+export default function ArmyImperialGuard(){
+ return( 
+        <View style={style.container}>
+            <Pressable onPress={()=> router.push('/ImperialGuard')}>
+            <Image resizeMode="stretch" source={require('../assets/images/RuleImperialG.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
-            <Image resizeMode="stretch" source={require('../assets/images/MinNecro.png')} style={style.image}/>
+            <Pressable onPress={()=> router.push('/MinImperialGuard')}>
+            <Image resizeMode="stretch" source={require('../assets/images/MinImperialGuard.png')} style={style.image}/>
             </Pressable>
         </View>
-    );
+ );
 };
+
 
 const style =StyleSheet.create({
     container: {flex:1,

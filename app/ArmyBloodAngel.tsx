@@ -1,4 +1,5 @@
 import { router } from "expo-router";
+import React from "react";
 import {Image, StyleSheet,Dimensions,View, Pressable } from 'react-native';
 
 const { width } = Dimensions.get('window');

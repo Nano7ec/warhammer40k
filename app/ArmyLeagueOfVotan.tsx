@@ -3,14 +3,14 @@ import React from "react";
 import {Image, StyleSheet, Dimensions, View, Pressable } from "react-native";
 const {width} = Dimensions.get ('screen');
 
-export default function ArmyAeldari (){
+export default function ArmyLeagueOfVotan (){
     return(
         <View style={styles.container}>
-            <Pressable onPress={()=> router.push('/Aeldari')}>
-                <Image source={require ('../assets/images/ArmyAeldari.png')} style={styles.image}/>
+            <Pressable onPress={()=> router.push('/LeagueofVotan')}>
+                <Image source={require ('../assets/images/ArmyLeagueofVotann.png')} style={styles.image}/>
             </Pressable>
-            <Pressable onPress={()=> router.push('/MinAeldari')}>
-                <Image source={require ('../assets/images/MinAeldari.png')} style={styles.image}/>
+            <Pressable onPress={()=>router.push('/MinLeagueofVotan')}>
+                <Image source={require ('../assets/images/MinLeagueOfvotan.png')} style={styles.image}/>
             </Pressable>
         </View>
     );

@@ -1,11 +1,10 @@
-import { Text, ScrollView, StyleSheet, View } from 'react-native';
-import Barbguants from '@/components/miniaturas/Tyranidos/Barbguants';
 import React from 'react';
+import { Text, ScrollView, StyleSheet, View } from 'react-native';
 
-export default function MinT(){
+export default function MinLeagueofVotan(){
     return(
         <ScrollView>
-        <>
+        <>   
         <Text style={styles.border}>Gramatica usada</Text>
         {/* Cabecera de la tabla */}
         <View style={styles.tableRow}>
@@ -183,11 +182,9 @@ export default function MinT(){
         </View>
 
       </>
-      <Barbguants/> 
         </ScrollView>
     );
 }
-
 const styles = StyleSheet.create({
     border: { color: '#fff', fontWeight: 'bold', 
         backgroundColor: '#2C0069', 

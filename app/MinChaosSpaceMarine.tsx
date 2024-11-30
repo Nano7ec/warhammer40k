@@ -6,7 +6,7 @@ import HuronBlackheart from '@/components/miniaturas/ChaosSpaceMarine/HuronBlack
 import PrincipeDemonio from '@/components/miniaturas/ChaosSpaceMarine/PrincipeDemonio';
 import PrincipeDemonioWings from '@/components/miniaturas/ChaosSpaceMarine/PrincipeDemonioWings';
 import * as React from 'react';
-import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import { Text, ScrollView, Dimensions, StyleSheet, View } from 'react-native';
  
 export default function MinChaosSpaceMarine () {
     return(

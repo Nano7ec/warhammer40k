@@ -6,7 +6,7 @@ import WarDogHuntsman from '@/components/miniaturas/ChaosKnight/WarDogHuntsman';
 import WarDogKarnivore from '@/components/miniaturas/ChaosKnight/WarDogKarnivore';
 import WarDogStalker from '@/components/miniaturas/ChaosKnight/WarDogStalker';
 import * as React from 'react';
-import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import { Text, ScrollView, Dimensions, StyleSheet, View } from 'react-native';
  export default function MinBloodAngel (){
     return (
         <ScrollView style={styles.container}>
