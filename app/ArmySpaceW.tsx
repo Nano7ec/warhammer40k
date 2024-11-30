@@ -10,7 +10,7 @@ export default function (){
             <Pressable onPress={()=> router.push('/SpaceWolf')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmySpaceW.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MInSpaceWolves')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinSpaceW.png')} style={style.image}/>
             </Pressable>
         </View>

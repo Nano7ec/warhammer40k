@@ -10,7 +10,7 @@ export default function ArmySpaceMarine(){
             <Pressable onPress={()=> router.push('/SpaceMarine')}>
                <Image resizeMode="stretch" source={require('../assets/images/ArmySapceM.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('./MinSpaceMarine')}>
                 <Image resizeMode="stretch" source={require('../assets/images/MinSpaceM.png')} style={style.image}/>
             </Pressable>
         </View>
