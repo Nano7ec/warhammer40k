@@ -12,6 +12,8 @@ import CrusaderSquad from "@/components/miniaturas/BlackTemplars/CrusaderSquad";
 import HighMarshal from "@/components/miniaturas/BlackTemplars/HighMarshal";
 import PrimarisCrusader from "@/components/miniaturas/BlackTemplars/PrimarisCrusader";
 import PrimarisSword from "@/components/miniaturas/BlackTemplars/PrimarisSword";
+import EmperorsChampion from "@/components/miniaturas/BlackTemplars/EmperorsChampion";
+import Castellan from "@/components/miniaturas/BlackTemplars/Castellan";
 
 export default function MinBlackTemplars (){
     return (
@@ -206,6 +208,8 @@ export default function MinBlackTemplars (){
             <HighMarshal/>
             <PrimarisCrusader/>
             <PrimarisSword/>
+            <EmperorsChampion/>
+            <Castellan/>
         </ScrollView>
       );
     };
