@@ -12,7 +12,7 @@ export default function ArmyChaosDemon (){
         </Pressable>
   
         {/* Imagen que navega a la pantalla BasicRule */}
-        <Pressable>
+        <Pressable onPress={()=> router.push('../MinChaosDemon')}>
           <Image resizeMode="stretch" source={require('../assets/images/minichaosdaemons.png')} style={styles.image} />
         </Pressable>
   
