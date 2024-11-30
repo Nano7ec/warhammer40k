@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
- export default function MinBloodAngel (){
+ 
+
+export default function MinBloodAngel (){
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#ff9f9f', padding: 7}}>
             {/**INICIA LA TABLA DE LA GRAMATICA */}

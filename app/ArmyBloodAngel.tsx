@@ -12,7 +12,7 @@ export default function ArmyBloodAngel () {
       </Pressable>
 
       {/* Imagen que navega a la pantalla Miniaturas */}
-      <Pressable onPress={()=> router.push('./MinBloodAngels')}>
+      <Pressable onPress={()=> router.push('../MinBloodAngel')}>
         <Image resizeMode="stretch" source={require('../assets/images/minibloodangels.png')} style={styles.image} />
       </Pressable>
 
