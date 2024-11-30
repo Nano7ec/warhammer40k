@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
       color: '#fff' 
   },
   wapo: { 
-      color: '#ff0000', 
+      color: '#fff', 
       fontWeight: 'bold' 
   }
 });

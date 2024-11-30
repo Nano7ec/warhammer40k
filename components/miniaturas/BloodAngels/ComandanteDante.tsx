@@ -2,22 +2,18 @@ import { Text, Image, Dimensions, StyleSheet, View } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
-export default function ChiefLibrarianMephiston() {
+export default function ComandanteDante() {
     return (
         <View>
             <>
-                <Image resizeMode="stretch" style={styles.image} source={require('../BloodAngels/images/bibliotecario_jefe_mefisto.png')} />
+                <Image resizeMode="stretch" style={styles.image} source={require('../BloodAngels/images/comandante_dante.png')} />
                 <Text style={styles.border}>
                     Habilidades
                 </Text>
                 <Text style={styles.descrip}>
-                    {'\n'}<Text style={styles.wapo}>Palabras clave:</Text> Infantería, Personaje, Héroe Épico, Psíquico, Granadas, Imperio, Tacticus, Bibliotecario Jefe Mefistón
-                    {'\n'}<Text style={styles.wapo}>El Impulso (Psíquica):</Text> Mientras este modelo lidere una unidad, las miniaturas de esa unidad tendrán la habilidad "Primero en Atacar" (Fights First).
-                    {'\n'}<Text style={styles.wapo}>Capucha Psíquica:</Text> Mientras este modelo lidere una unidad, las miniaturas de esa unidad tienen la habilidad "Resistencia al Dolor 4+" (Feel No Pain 4+) contra ataques psíquicos y daño mortal.
-                    {'\n'}<Text style={styles.wapo}>Mirada Transfixiante (Psíquica):</Text> Al comienzo de la fase de combate, selecciona una unidad enemiga en rango de compromiso y tira 1D6:
-                    {'\n'}- Con un 1, este psíquico sufre D3 heridas mortales.
-                    {'\n'}- Con un 2-5, reduce la Habilidad de Armas (HA) de las armas cuerpo a cuerpo enemigas en 1 hasta el final de la fase.
-                    {'\n'}- Con un 6, reduce tanto la HA como los ataques de esas armas en 1 hasta el final de la fase.
+                    {'\n'}<Text style={styles.wapo}>Palabras clave:</Text> Infantería, Personaje, Héroe Épico, Volar, Pack de Salto, Granadas, Imperium, Táctico, Maestro de Capítulo, Comandante Dante
+                    {'\n'}<Text style={styles.wapo}>Señor Regente del Imperium Nihilus:</Text> Mientras este modelo esté liderando una unidad, suma 1 a las tiradas de Carga realizadas por esa unidad y cada vez que un modelo de esa unidad realice un ataque, suma 1 a la tirada para impactar.
+                    {'\n'}<Text style={styles.wapo}>Máscara de la Muerte de Sanguinius:</Text> Al comienzo de la fase de combate, cada unidad enemiga dentro de 6" de este modelo debe realizar una prueba de **Impacto de Batalla**, restando 1 a esa prueba cuando la hagan.
                 </Text>
                 {/* Tabla de armas a distancia */}
                 <Text style={styles.border}>Armas a Distancia</Text>
@@ -31,22 +27,13 @@ export default function ChiefLibrarianMephiston() {
                     <View style={styles.tableCelltop}><Text style={styles.headerText}>D</Text></View>
                 </View>
                 <View style={styles.tableRow}>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>Furia de los Ancestros</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>12"</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>3</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>2+</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>4</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>-1</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>D3</Text></View>
-                </View>
-                <View style={styles.tableRow}>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>Pistola de Plasma (Sobrecargada)</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>12"</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>Perdición</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>6"</Text></View>
                     <View style={styles.tableCell}><Text style={styles.cellText}>1</Text></View>
                     <View style={styles.tableCell}><Text style={styles.cellText}>2+</Text></View>
                     <View style={styles.tableCell}><Text style={styles.cellText}>8</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>-3</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>2</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>-4</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>D6</Text></View>
                 </View>
                 {/* Tabla de armas cuerpo a cuerpo */}
                 <Text style={styles.border}>Armas de Combate Cuerpo a Cuerpo</Text>
@@ -60,18 +47,18 @@ export default function ChiefLibrarianMephiston() {
                     <View style={styles.tableCelltop}><Text style={styles.headerText}>D</Text></View>
                 </View>
                 <View style={styles.tableRow}>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>Vitarus [Psíquica]</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>Cuerpo a Cuerpo</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>6</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>El Hacha Mortalis</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>Cuerpo a cuerpo</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>8</Text></View>
                     <View style={styles.tableCell}><Text style={styles.cellText}>2+</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>9</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>7</Text></View>
                     <View style={styles.tableCell}><Text style={styles.cellText}>-3</Text></View>
-                    <View style={styles.tableCell}><Text style={styles.cellText}>D3</Text></View>
+                    <View style={styles.tableCell}><Text style={styles.cellText}>2</Text></View>
                 </View>
                 <Text style={styles.border}>Composición de la Unidad</Text>
                 <Text style={styles.descrip}>
-                    ■ 1 Bibliotecario Jefe Mefistón – Héroe Épico{'\n'}
-                    Este modelo está equipado con: pistola de plasma; Furia de los Ancestros; Vitarus.
+                    ■ 1 Comandante Dante – Héroe Épico{'\n'}
+                    Este modelo está equipado con: Perdición; El Hacha Mortalis.
                 </Text>
             </>
         </View>
@@ -79,7 +66,6 @@ export default function ChiefLibrarianMephiston() {
 }
 
 const styles = StyleSheet.create({
-    /* Estilos idénticos a los del componente Astorath */
     border: { 
         color: '#fff', 
         fontWeight: 'bold', 

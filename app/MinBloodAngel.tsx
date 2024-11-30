@@ -3,6 +3,10 @@ import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-nat
 import Astorath from '@/components/miniaturas/BloodAngels/Astorath';
 import BaalPredator from '@/components/miniaturas/BloodAngels/BaalPredator';
 import ChiefLibrarianMephiston from '@/components/miniaturas/BloodAngels/ChiefLibrarianMephiston';
+import BrotherCorbulo from '@/components/miniaturas/BloodAngels/BrotherCorbulo';
+import CapitanTycho from '@/components/miniaturas/BloodAngels/CapitanTycho';
+import ComandanteDante from '@/components/miniaturas/BloodAngels/ComandanteDante';
+import CompañiaDeLaMuerte from '@/components/miniaturas/BloodAngels/CompañiaDeLaMuerte';
  
 
 export default function MinBloodAngel (){
@@ -160,6 +164,10 @@ export default function MinBloodAngel (){
 <br/> <Astorath/>
 <br/> <BaalPredator/>
 <br/> <ChiefLibrarianMephiston/>
+<br/> <BrotherCorbulo/>
+<br/> <CapitanTycho/>
+<br/> <ComandanteDante/>
+<br/> <CompañiaDeLaMuerte/>
 </ScrollView>
     );
  };
