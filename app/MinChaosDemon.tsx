@@ -1,8 +1,14 @@
-import React from 'react';
+import Bloodmaster from '@/components/miniaturas/ChaosDaemons/Bloodmaster';
+import Bloodthirster from '@/components/miniaturas/ChaosDaemons/Bloodthirster';
+import Karanak from '@/components/miniaturas/ChaosDaemons/Karanak';
+import Rendmaster from '@/components/miniaturas/ChaosDaemons/Rendmaster';
+import Skarbrand from '@/components/miniaturas/ChaosDaemons/Skarbrand';
+import Skullmaster from '@/components/miniaturas/ChaosDaemons/Skullmaster';
+import Skulltaker from '@/components/miniaturas/ChaosDaemons/Skulltaker';
 import { Text, ScrollView, StyleSheet, View } from 'react-native';
-export default function ChaosDemon (){
+export default function MinChaosDemon (){
 return(
-    <ScrollView>
+    <ScrollView style={{ flex: 1, backgroundColor: '#7d8cc3', padding: 7}}>
     <>
     <Text style={styles.border}>Gramatica usada</Text>
     {/* Cabecera de la tabla */}
@@ -179,15 +185,22 @@ return(
         </View>
       </>
     </View>
-
   </>
+  <br/> <Skarbrand/>
+  <br/> <Bloodthirster/>
+  <br/> <Skulltaker/>
+  <br/> <Bloodmaster/>
+  <br/> <Skullmaster/>
+  <br/> <Rendmaster/>
+  <br/> <Karanak/>
     </ScrollView>
 );
 };
 
 const styles = StyleSheet.create({
+  container: {flex: 1, backgroundColor: '#7d8cc3', paddingVertical: 0},
     border: { color: '#fff', fontWeight: 'bold', 
-        backgroundColor: '#2C0069', 
+        backgroundColor: '#11183f', 
         fontSize: 20, 
         padding: 5, 
         marginTop: 6, 
@@ -203,7 +216,7 @@ const styles = StyleSheet.create({
         alignItems: 'center', // Centra el contenido horizontalmente
         justifyContent: 'center', // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: '#2C0069',
+        backgroundColor: '#11183f',
         marginTop: 5,
         fontSize: 10
       },
@@ -212,13 +225,13 @@ const styles = StyleSheet.create({
         alignItems: 'center', // Centra el contenido horizontalmente
         justifyContent: 'center', // Centra el contenido verticalmente
         padding: 5,
-        backgroundColor: '#C5ACE3',
+        backgroundColor: '#3b3d5e',
         fontSize: 10
       },
       
     cellText: {
         fontSize: 14,
-        color: '#000',
+        color: '#fff',
     
       },
     headerText: {
@@ -226,7 +239,7 @@ const styles = StyleSheet.create({
       fontSize: 20
     },
     wapo: {
-      color: '#2C0069',
+      color: '#fff',
       fontWeight: 'bold'
     },
   });

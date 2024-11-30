@@ -8,7 +8,7 @@ export default function ArmyChaosKnight (){
     return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla BasicRule */}
-      <Pressable>
+      <Pressable onPress={()=> router.push('./ChaosKnight')}>
         <Image resizeMode="stretch" source={require('../assets/images/armychaosknight.png')} style={styles.image} />
       </Pressable>
 
