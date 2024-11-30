@@ -9,7 +9,7 @@ export default function ArmyCustodes (){
             <Pressable onPress={()=> router.push('/Custodes')}>
             <Image resizeMode="stretch" source={require('../assets/images/ArmyCustodes.png')} style={style.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinCustodes')}>
             <Image resizeMode="stretch" source={require('../assets/images/MinCustodes.png')} style={style.image}/>
             </Pressable>
         </View>
