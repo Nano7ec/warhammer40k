@@ -10,6 +10,9 @@ export default function ArmyDukhari () {
       <Pressable onPress={()=> router.push('/Drukhari')}>
         <Image resizeMode="stretch" source={require('../assets/images/DrukhariRules.png')} style={styles.image} />
       </Pressable>
+      <Pressable onPress={()=> router.push('/MinDrukhari')}>
+        <Image resizeMode="stretch" source={require('../assets/images/MinDrukhari.png')} style={styles.image} />
+      </Pressable>
     </View>
   );
 };
