@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { Text, ScrollView, Image, Dimensions, StyleSheet, View } from 'react-native';
+import Astorath from '@/components/miniaturas/BloodAngels/Astorath';
+import BaalPredator from '@/components/miniaturas/BloodAngels/BaalPredator';
+import ChiefLibrarianMephiston from '@/components/miniaturas/BloodAngels/ChiefLibrarianMephiston';
  
 
 export default function MinBloodAngel (){
@@ -154,6 +157,9 @@ export default function MinBloodAngel (){
         </View>
     </>
 </View>
+<br/> <Astorath/>
+<br/> <BaalPredator/>
+<br/> <ChiefLibrarianMephiston/>
 </ScrollView>
     );
  };

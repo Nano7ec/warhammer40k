@@ -7,7 +7,7 @@ export default function ArmyBloodAngel () {
   return (
     <View style={styles.container}>
       {/* Imagen que navega a la pantalla Army */}
-      <Pressable>
+      <Pressable onPress={()=> router.push('/BloodAngels')}>
         <Image resizeMode="stretch" source={require('../assets/images/armybloodangels.png')} style={styles.image} />
       </Pressable>
 
