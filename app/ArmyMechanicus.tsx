@@ -8,7 +8,7 @@ export default function ArmyMechanicus (){
             <Pressable onPress={()=> router.push('/Mechanicus')}>
                 <Image resizeMode="stretch" source={require("../assets/images/ArmyMecha.png")} style={styles.image}/>
             </Pressable>
-            <Pressable>
+            <Pressable onPress={()=> router.push('/MinMechanicus')}>
                 <Image resizeMode="stretch" source={require("../assets/images/MinMecha.png")} style={styles.image}/>
             </Pressable>
             
